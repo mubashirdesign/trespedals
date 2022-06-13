@@ -1,0 +1,265 @@
+
+
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-white">
+  <body class="h-full">
+  ```
+-->
+<div class="flex bg-gray-900">
+    <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div class="mx-auto w-full max-w-sm lg:w-96">
+        <div>
+          <h2 class="mt-6 text-3xl font-extrabold text-white">Sign in to your account</h2>
+          <p class="mt-2 text-sm text-white">
+            Or
+            <a href="{{ routes.account_register_url }}" class="font-medium text-white hover:text-lightPrimaryBlue"> Create Account </a>
+          </p>
+        </div>
+  
+        <div class="mt-8">
+         
+  
+          <div class="mt-6">
+         
+  
+      {%- form 'customer_login', novalidate: 'novalidate' -%}
+      <div class="space-y-6">
+        {%- if form.errors -%}
+          <h2 class="text-error font-bold text-lg" tabindex="-1">
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+          <span class="text-white">
+          {{ form.errors | default_errors }}
+          </span>
+        {%- endif -%}
+  
+        <div> 
+          <label class="block text-sm font-medium text-gray-100" for="CustomerEmail">
+            Email address
+          </label>  
+          <div class="mt-1">     
+          <input
+            type="email"
+            name="customer[email]"
+            id="CustomerEmail"
+            autocomplete="email"
+            autocorrect="off"
+            autocapitalize="off"
+            class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            {% if form.errors contains 'form' %}
+              aria-invalid="true"
+            {% endif %}
+            placeholder="{{ 'customer.login_page.email' | t }}"
+          >
+          </div>
+          
+        </div>
+  
+        {%- if form.password_needed -%}
+          <div class="space-y-1">  
+            <label class="block text-sm font-medium text-gray-100" for="CustomerPassword">
+              Password
+            </label> 
+            <div class="mt-1">       
+            <input
+              type="password"
+              value=""
+              name="customer[password]"
+              id="CustomerPassword"
+              class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              autocomplete="current-password"
+              {% if form.errors contains 'form' %}
+                aria-invalid="true"
+              {% endif %}
+              placeholder="{{ 'customer.login_page.password' | t }}"
+            >
+            </div>
+          </div>
+  
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input id="remember-me" name="remember-me" type="checkbox" class="hidden h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+              <label for="remember-me" class="ml-2 text-sm text-gray-900 hidden"></label>
+            </div>
+  
+            <div class="text-sm">
+              <a id="forgot-password" href="#recover" class="font-medium text-white hover:text-lightPrimaryBlue"> Forgot your password? </a>
+            </div>
+          </div>
+  
+        {%- endif -%}
+        <div>
+          <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-lightPrimaryBlue hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign in</button>
+        </div>
+       
+  
+     
+      </div>
+      {%- endform -%}
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg:block relative w-0 flex-1">
+      <img
+        srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+          {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+          {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
+          {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+          {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
+          {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
+          {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}
+          {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}
+          {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+        sizes="100vw"
+        src="{{ section.settings.image | img_url: '1500x' }}"
+        loading="lazy"
+        class="absolute inset-0 h-full w-full object-cover"
+        alt="{{ section.settings.image.alt | escape }}"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
+      >
+    </div>
+  </div>
+  
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <recover-modal class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <!--
+      Background backdrop, show/hide based on modal state.
+  
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+  
+    <div class="fixed z-10 inset-0 overflow-y-auto">
+      <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+        <!--
+          Modal panel, show/hide based on modal state.
+  
+          Entering: "ease-out duration-300"
+            From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            To: "opacity-100 translate-y-0 sm:scale-100"
+          Leaving: "ease-in duration-200"
+            From: "opacity-100 translate-y-0 sm:scale-100"
+            To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        -->
+        {%- form 'recover_customer_password' -%}
+  
+        <div class="relative bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full sm:p-6">
+          <div>
+           
+            <div class="mt-3 text-center sm:mt-5">
+              <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Reset Your Password</h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-500">Please contact us if you have any issues with resetting your password.</p>
+              </div>
+            </div>
+            <div class="space-y-6">
+              {%- if form.errors -%}
+                <h2 class="text-error font-bold text-lg" tabindex="-1">
+                  {{ 'templates.contact.form.error_heading' | t }}
+                </h2>
+                <span class="text-white">
+                  {{ form.errors | default_errors }}
+                </span>
+              {%- endif -%}
+        
+              <div>
+                <label for="RecoverEmail" class="block text-sm font-medium text-lightPrimaryBlue">
+                  {{ 'customer.login_page.email' | t }}
+                </label>
+                <input type="email"
+                  value=""
+                  name="email"
+                  id="RecoverEmail"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  autocomplete="email"
+                  {% if form.errors %}
+                    aria-invalid="true"
+                    aria-describedby="RecoverEmail-email-error"
+                    autofocus
+                  {% endif %}
+                  placeholder="{{ 'customer.login_page.email' | t }}"
+                >
+                
+              </div>
+        
+           
+            </div>
+          </div>
+          <div class="mt-5 sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense">
+            <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-lightPrimaryBlue text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:col-start-2 sm:text-sm">Submit</button>
+            <button id="cancel" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:col-start-1 sm:text-sm">Cancel</button>
+          </div>
+        </div>
+  
+        {%- endform -%}
+      </div>
+    </div>
+  </recover-modal>
+  
+<script>
+class RecoverModal extends HTMLElement {
+    constructor() {
+    super();
+    }
+
+    connectedCallback() {
+    document.querySelector('#forgot-password').addEventListener('click', () => {
+        this.classList.add('block');
+        this.classList.remove('hidden');
+    })
+    document.querySelector('#cancel').addEventListener('click', () => {
+        this.classList.add('hidden');
+        this.classList.remove('block');
+    })
+    }
+
+    
+}
+
+customElements.define('recover-modal', RecoverModal);
+</script>
+
+
+  
+{% schema %}
+{
+ "name": "Login",
+ "settings": [
+  {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image"
+  }
+ ]
+}
+{% endschema %}
