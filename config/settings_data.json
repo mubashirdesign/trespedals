@@ -44,6 +44,14 @@
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails"
         }
+      },
+      "header-two": {
+        "type": "header-two",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/tp-og_bdd71018-080d-4431-ae30-008efad56d7d.png",
+          "logo_width": 100,
+          "menu": "main-menu"
+        }
       }
     },
     "content_for_index": [
