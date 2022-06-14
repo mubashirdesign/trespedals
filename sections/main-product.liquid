@@ -72,8 +72,6 @@
 
         {%- for block in section.blocks -%}
             {%- case block.type -%}
-            {%- when 'product_bundle' -%}
-              {% render 'product-bundle' %}
             {%- when 'text' -%}
               <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
                 {{- block.settings.text -}}
@@ -496,20 +494,6 @@
         {
           "type": "checkbox",
           "id": "show_dynamic_checkout",
-          "default": true,
-          "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
-          "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
-        }
-      ]
-    },
-    {
-      "type": "product_bundle",
-      "name": "Product Bundle",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "enable_product_bundle",
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
