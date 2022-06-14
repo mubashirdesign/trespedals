@@ -50,7 +50,12 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/tp-og_bdd71018-080d-4431-ae30-008efad56d7d.png",
           "logo_width": 100,
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "meganav_image_one": "shopify:\/\/shop_images\/Three_Pedals_3P2-14.jpg",
+          "meganav_image_one_button_label": "Big Fast Car Package",
+          "meganav_image_one_button_link": "shopify:\/\/pages\/contact",
+          "meganav_image_two_button_label": "Button label",
+          "meganav_image_two_button_link": ""
         }
       }
     },
