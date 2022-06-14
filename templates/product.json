@@ -19,6 +19,12 @@
             "picker_type": "dropdown"
           }
         },
+        "9e19c437-54e2-4196-b732-c4ed4f71072f": {
+          "type": "product_bundle",
+          "settings": {
+            "enable_product_bundle": true
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -40,6 +46,7 @@
         "title",
         "price",
         "variant_picker",
+        "9e19c437-54e2-4196-b732-c4ed4f71072f",
         "quantity_selector",
         "buy_buttons",
         "description"
@@ -71,7 +78,6 @@
           "settings": {
             "title": "Exhaust Systems",
             "sub_title": "Featured Sub Title",
-            "image": "shopify:\/\/shop_images\/custom_resized_0d5ae17b-a501-40be-ad48-b20eeb7555b8.jpg",
             "url": "shopify:\/\/collections\/cat-back-systems-gm-b-body-1994-1996"
           }
         },
@@ -98,7 +104,6 @@
           "settings": {
             "title": "Crossmembers",
             "sub_title": "Featured Sub Title",
-            "image": "shopify:\/\/shop_images\/custom_resized_73838e57-e1a1-4299-9348-7f4ab3a25074.jpg",
             "url": "shopify:\/\/collections\/cross-members"
           }
         }
