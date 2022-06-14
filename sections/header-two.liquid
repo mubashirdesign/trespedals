@@ -169,27 +169,66 @@
                       <div class="max-w-7xl mx-auto px-8">
                         <div class="grid grid-cols-2 gap-y-10 gap-x-8 py-16">
                           <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                            {% if section.settings.meganav_image_one != blank %}
                             <div class="group relative text-base sm:text-sm">
                               <div class="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
-                                <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="object-center object-cover">
+                                <img
+                                srcset="{%- if section.settings.meganav_image_one.width >= 375 -%}{{ section.settings.meganav_image_one | img_url: '375x' }} 375w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 750 -%}{{ section.settings.meganav_image_one | img_url: '750x' }} 750w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 1100 -%}{{ section.settings.meganav_image_one | img_url: '1100x' }} 1100w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 1500 -%}{{ section.settings.meganav_image_one | img_url: '1500x' }} 1500w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 1780 -%}{{ section.settings.meganav_image_one | img_url: '1780x' }} 1780w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 2000 -%}{{ section.settings.meganav_image_one | img_url: '2000x' }} 2000w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 3000 -%}{{ section.settings.meganav_image_one | img_url: '3000x' }} 3000w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_one.width >= 3840 -%}{{ section.settings.meganav_image_one | img_url: '3840x' }} 3840w,{%- endif -%}
+                                  {{ section.settings.meganav_image_one | img_url: 'master' }} {{ section.settings.meganav_image_one.width }}w"
+                                sizes="100vw"
+                                src="{{ section.settings._image_one | img_url: '500x' }}"
+                                loading="lazy"
+                                class="object-center object-cover"
+                                alt="{{ section.settings._image_one.alt | escape }}"
+                                width="{{ section.settings._image_one.width }}"
+                                height="{{ section.settings._image_one.width | divided_by: section.settings._image_one.aspect_ratio }}"
+                              >
+                              
                               </div>
-                              <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <a href="{{ meganav_image_one_button_link }}" class="mt-6 block font-medium text-gray-900">
                                 <span class="absolute z-10 inset-0" aria-hidden="true"></span>
-                                New Arrivals
+                                {{ meganav_image_one_button_label }}
                               </a>
                               <p aria-hidden="true" class="mt-1">Shop now</p>
                             </div>
-  
+                            {% endif %}
+
+                            {% if section.settings.meganav_image_two != blank %}
                             <div class="group relative text-base sm:text-sm">
                               <div class="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
-                                <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="object-center object-cover">
+                                <img
+                                srcset="{%- if section.settings.meganav_image_two.width >= 375 -%}{{ section.settings.meganav_image_two | img_url: '375x' }} 375w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 750 -%}{{ section.settings.meganav_image_two | img_url: '750x' }} 750w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 1100 -%}{{ section.settings.meganav_image_two | img_url: '1100x' }} 1100w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 1500 -%}{{ section.settings.meganav_image_two | img_url: '1500x' }} 1500w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 1780 -%}{{ section.settings.meganav_image_two | img_url: '1780x' }} 1780w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 2000 -%}{{ section.settings.meganav_image_two | img_url: '2000x' }} 2000w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 3000 -%}{{ section.settings.meganav_image_two | img_url: '3000x' }} 3000w,{%- endif -%}
+                                  {%- if section.settings.meganav_image_two.width >= 3840 -%}{{ section.settings.meganav_image_two | img_url: '3840x' }} 3840w,{%- endif -%}
+                                  {{ section.settings.meganav_image_two | img_url: 'master' }} {{ section.settings.meganav_image_two.width }}w"
+                                sizes="100vw"
+                                src="{{ section.settings.image_two | img_url: '500x' }}"
+                                loading="lazy"
+                                class="object-center object-cover"
+                                alt="{{ section.settings.image_two.alt | escape }}"
+                                width="{{ section.settings.image_two.width }}"
+                                height="{{ section.settings.image_two.width | divided_by: section.settings.image_two.aspect_ratio }}"
+                              >
                               </div>
-                              <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <a href="{{ meganav_image_two_button_link }}" class="mt-6 block font-medium text-gray-900">
                                 <span class="absolute z-10 inset-0" aria-hidden="true"></span>
-                                Basic Tees
+                                {{ meganav_image_two_button_label }}
                               </a>
                               <p aria-hidden="true" class="mt-1">Shop now</p>
                             </div>
+                            {% endif %}
                           </div>
                           <div class="row-start-1 grid grid-cols-3 gap-y-10 gap-x-8 text-sm">
 
@@ -345,6 +384,38 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "meganav_image_one",
+      "label": "Meganav Image One"
+    },
+    {
+      "type": "text",
+      "id": "meganav_image_one_button_label",
+      "default": "Button label",
+      "label": "Meganav Image One Button Label"
+    },
+    {
+      "type": "url",
+      "id": "meganav_image_one_button_link",
+      "label": "Meganav Image One Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "meganav_image_two",
+      "label": "Meganav Image Two"
+    },
+    {
+      "type": "text",
+      "id": "meganav_image_two_button_label",
+      "default": "Button label",
+      "label": "Meganav Image Two"
+    },
+    {
+      "type": "url",
+      "id": "meganav_image_two_button_link",
+      "label": "Meganav Image Two"
     }
   ]
 }
