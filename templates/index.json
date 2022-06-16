@@ -3,11 +3,10 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/preparing-for-travel.jpg",
-        "image_2": "shopify:\/\/shop_images\/ripe-red-strawberries-in-a-white-bowl.jpg",
-        "heading": "Text goes here",
-        "subheading": "text goes here",
-        "button_label": "SHOP NOW",
+        "image": "shopify:\/\/shop_images\/Three_Pedals_1996_Impala_GenV_LT1_T56-159-1200x607.jpg",
+        "heading": "",
+        "subheading": "",
+        "button_label": "",
         "button_link": ""
       }
     }
