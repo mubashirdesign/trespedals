@@ -17,7 +17,7 @@
           "settings": {
             "title": "Conversion Kit",
             "sub_title": "1977 – 1990 GM B-Body",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-4.jpg",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
             "url": ""
           }
         },
@@ -26,7 +26,7 @@
           "settings": {
             "title": "Conversion Kit",
             "sub_title": "1978 – 1988 GM A\/G-Body",
-            "image": "shopify:\/\/shop_images\/rm-9023.jpg",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_CC_Malibu-50.jpg",
             "url": ""
           }
         }
@@ -37,8 +37,8 @@
         "70d36072-e34c-4cb0-8263-29887333ac06"
       ],
       "settings": {
-        "title": "Featured collection",
-        "sub_title": "Featured collection Sub Title",
+        "title": "Welcome to Three Pedals",
+        "sub_title": "The home of the manual swap, shop our conversion kits below",
         "style": "circle"
       }
     },
@@ -51,10 +51,110 @@
         "button_label": "",
         "button_link": ""
       }
+    },
+    "16586690029da88f5f": {
+      "type": "featured-collection",
+      "blocks": {
+        "d444e40e-8be1-46bc-8994-27786fea36a0": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Bellhousings",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/rm-9023.jpg",
+            "url": ""
+          }
+        },
+        "3f9aad42-0421-4463-9698-c6db4a687408": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Transmissions",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_Tremec_Magnum-F-8_1.jpg",
+            "url": ""
+          }
+        },
+        "5b4c43bb-c1a8-436d-aa90-02d106299a0c": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Pedals",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_3PGMB001_GM_B-Body_Pedal.jpg",
+            "url": ""
+          }
+        },
+        "4a6f383a-8443-42e0-aa27-768b109d3548": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Clutch Kits",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/6912-07_McLeod_RST_Street_Twin_Clutch.jpg",
+            "url": ""
+          }
+        },
+        "24de2c01-f0e4-4f1b-9ea2-96c34a1df8ae": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Shifters",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/5380036.jpg",
+            "url": ""
+          }
+        },
+        "3b13001a-aa97-4ac7-9871-b1eb681772ab": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Driveshafts",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/537-cf6769-400.jpg",
+            "url": ""
+          }
+        },
+        "1bc95fb2-6edb-4761-85c3-7541c4c5b11c": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Crossmembers",
+            "sub_title": "Featured Sub Title",
+            "url": ""
+          }
+        },
+        "1e3c0188-db54-43e0-b633-e72086a101be": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Consoles",
+            "sub_title": "Featured Sub Title",
+            "url": ""
+          }
+        },
+        "5cc34feb-a878-4ce9-90cc-b9ef26f9f942": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Featured Title",
+            "sub_title": "Featured Sub Title",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d444e40e-8be1-46bc-8994-27786fea36a0",
+        "3f9aad42-0421-4463-9698-c6db4a687408",
+        "5b4c43bb-c1a8-436d-aa90-02d106299a0c",
+        "4a6f383a-8443-42e0-aa27-768b109d3548",
+        "24de2c01-f0e4-4f1b-9ea2-96c34a1df8ae",
+        "3b13001a-aa97-4ac7-9871-b1eb681772ab",
+        "1bc95fb2-6edb-4761-85c3-7541c4c5b11c",
+        "1e3c0188-db54-43e0-b633-e72086a101be",
+        "5cc34feb-a878-4ce9-90cc-b9ef26f9f942"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "sub_title": "Featured collection Sub Title",
+        "style": "grid"
+      }
     }
   },
   "order": [
     "1658664611ad51cf02",
-    "image_banner"
+    "image_banner",
+    "16586690029da88f5f"
   ]
 }
