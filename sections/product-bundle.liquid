@@ -71,9 +71,10 @@
       </div>
   
       <!-- Product info -->
-      <div class="max-w-2xl mx-auto pt-10 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
+      <div class="max-w-2xl mx-auto pt-10 px-4 sm:px-6 lg:max-w-7xl lg:pt-8 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
         <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
           <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Build Your Kit</h1>
+          <p>The essential items for your swap have been pre-selected. If you wish to add, change or remove any of the items in the available options feel free to do so below.</p>
         </div>
   
         <!-- Options -->
@@ -93,23 +94,23 @@
 
                 Our Bigfastcar conversion kit makes it easy to put a T56 six speed manual transmission in your 1994 – 1996 Impala SS (see additional applications below). Our integrated clutch and brake pedal assembly fits right in place of your brake pedal assembly, and works with the Tilton Series 78 master cylinder.  To get you up and running quickly we offer a hydraulics package with all the parts you need to connect to your hydraulic release bearing or slave cylinder.  Our transmission crossmember accommodates either the first generation T56 or the current T56 Magnum. And our center console pieces complete the interior of your car, providing a factory look with a leather shift boot.
 
-Our complete kit is priced at $2,325.  If you don’t have an Impala SS center console, the price is $2,125.  Pedal assemblies are available alone for $949.  Further pricing and package details are below.
+                        Our complete kit is priced at $2,325.  If you don’t have an Impala SS center console, the price is $2,125.  Pedal assemblies are available alone for $949.  Further pricing and package details are below.
 
-Our pedal and crossmember have undergone finite element analysis (FEA), whereby professional engineers simulate real world and worst case scenarios on pressures and loads in order to identify weak points. We design our products to withstand extreme forces, and we test our parts on the track.  We proudly design and manufacture everything in the USA.
+                        Our pedal and crossmember have undergone finite element analysis (FEA), whereby professional engineers simulate real world and worst case scenarios on pressures and loads in order to identify weak points. We design our products to withstand extreme forces, and we test our parts on the track.  We proudly design and manufacture everything in the USA.
 
-To complete your conversion, we have two recommended packages, and we are happy to customize a package for your needs.
+                        To complete your conversion, we have two recommended packages, and we are happy to customize a package for your needs.
 
-Our kit works with the stock LT1 engine as well as the LS engine family and we have engineered packages to make it easy to install your 6 speed behind the engine of your choice.
+                        Our kit works with the stock LT1 engine as well as the LS engine family and we have engineered packages to make it easy to install your 6 speed behind the engine of your choice.
 
-To purchase a kit, visit our shopping cart or contact us.
+                        To purchase a kit, visit our shopping cart or contact us.
 
-Kit for Impala SS – $2,325
+                        Kit for Impala SS – $2,325
 
-Kit for all other B- and D-Bodies – Regular price $2,125 – the only difference is that this doesn’t include our custom designed console insert and shift boot
+                        Kit for all other B- and D-Bodies – Regular price $2,125 – the only difference is that this doesn’t include our custom designed console insert and shift boot
 
-Integrated clutch and brake pedal, and nothing else (patent pending) – $949. BBHP customers can upgrade their existing pedal at an additional $50 discount, to $899.
+                        Integrated clutch and brake pedal, and nothing else (patent pending) – $949. BBHP customers can upgrade their existing pedal at an additional $50 discount, to $899.
 
-Kits are now shipping.
+                        Kits are now shipping.
 
               </p>
             </div>
@@ -123,34 +124,51 @@ Kits are now shipping.
           <div class="mt-4 lg:mt-0 lg:row-span-3">
   
             <h2 class="sr-only">Product information</h2>
-            <p class="text-lg text-gray-900 font-medium">Total: $192</p>
     
             <!-- Reviews -->
         
-            <form class="mt-10">
+            <form>
        
-              <div class="mt-10">
+              <div>
              
     
-                <fieldset class="mt-4">
+                <fieldset class="p-3 bg-gray-100 rounded-md">
                   <legend class="sr-only">Choose a size</legend>
-                  <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-2">
+                  <div class="grid gap-4 grid-cols-4 auto-rows-auto">
 
                     
                 {% for block in section.blocks %} 
 
                 {% if block.type == "featured_heading" %}
-                  <div class="flex items-center justify-between col-span-2">
-                    <h3 class="text-sm text-gray-900 font-medium">Pedals & Hydraulics</h3>
-                    <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Size guide</a>
+                  <div class="col-span-4">
+                    <span class="flex items-center justify-between">
+                        <h3 class="text-lg font-extrabold tracking-tight text-gray-900 pb-0">{{ block.settings.featured_heading }}</h3>
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Size guide</a>
+                    </span>
+                    <hr class="w-full h-[2px] bg-gray-300 my-1"/>
                   </div>
                 {% elsif block.type == "featured_product" %}
-                  <div class="col-span-{{block.settings.column_span}}">
+                  <div class="col-span-{{block.settings.column_span}} h-full flex flex-col">
                     <!-- Active: "ring-2 ring-indigo-500" -->
-                    <img class="h-[250px] w-full object-cover rounded-md" src="https://cdn.shopify.com/s/files/1/0612/9644/3607/files/Three_Pedals_3PGMB001_GM_B-Body_Pedal.jpg?v=1655207587">
-                 
-                    <p class="text-xs text-gray-500 mt-4">{{block.settings.bundle_product.title}}</p>
-                    <button type="submit" class="mt-2 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-sm tracking-tighter font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add</button>
+                    <a href="{{block.settings.bundle_product.url}}">
+                    <img
+                    srcset="{%- if block.settings.bundle_product.featured_image.width >= 375 -%}{{ block.settings.bundle_product.featured_image | img_url: '375x' }} 375w,{%- endif -%}
+                      {%- if block.settings.bundle_product.featured_image.width >= 750 -%}{{ block.settings.bundle_product.featured_image | img_url: '750x' }} 750w,{%- endif -%}
+                      {%- if block.settings.bundle_product.featured_image.width >= 1100 -%}{{ block.settings.bundle_product.featured_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                      {{ block.settings.bundle_product.featured_image | img_url: 'master' }} {{ block.settings.bundle_product.featured_image.width }}w"
+                    sizes="100vw"
+                    src="{{ block.settings.bundle_product.featured_image | img_url: '500x' }}"
+                    loading="lazy"
+                    class="h-[200px] w-full object-cover rounded-md"
+                    alt="{{ block.settings.bundle_product.featured_image.alt | escape }}"
+                    width="{{ block.settings.bundle_product.featured_image.width }}"
+                    height="{{ block.settings.bundle_product.featured_image.width | divided_by: block.settings.bundle_product.featured_image.aspect_ratio }}"
+                  >
+                    <p class="text-xs text-gray-500 my-3">{{block.settings.bundle_product.title}}</p>
+                    </a>
+                    <input type="hidden" name="id" value="{{ block.settings.bundle_product.selected_or_first_available_variant.id }}" disabled>
+
+                    <button class="mt-auto w-full bg-primaryRed border border-transparent rounded-md py-1 px-8 flex items-center justify-center text-sm tracking-tighter font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add</button>
                     </div>
                 {% endif %}
 
