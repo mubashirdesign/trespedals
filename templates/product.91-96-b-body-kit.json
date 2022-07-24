@@ -1,7 +1,26 @@
 {
   "sections": {
+    "165867490877899797": {
+      "type": "product-bundle",
+      "blocks": {
+        "342ae9fc-0688-44c9-a272-79a84e220141": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "91-96-gm-b-body-integrated-clutch-and-brake-pedal-assembly",
+            "column_span": 1
+          }
+        }
+      },
+      "block_order": [
+        "342ae9fc-0688-44c9-a272-79a84e220141"
+      ],
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
     "main": {
       "type": "main-product",
+      "disabled": true,
       "blocks": {
         "title": {
           "type": "title",
@@ -115,6 +134,7 @@
     }
   },
   "order": [
+    "165867490877899797",
     "main",
     "product-recommendations",
     "165373437104a45665"
