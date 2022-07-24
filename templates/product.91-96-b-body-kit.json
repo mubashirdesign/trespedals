@@ -104,6 +104,12 @@
             "bundle_product": "",
             "column_span": 1
           }
+        },
+        "f0eeec94-5905-4cfc-a5da-f32ba6af5cc5": {
+          "type": "featured_heading",
+          "settings": {
+            "featured_heading": "Drivetrain Components"
+          }
         }
       },
       "block_order": [
@@ -121,7 +127,8 @@
         "9873aba4-48a6-40f5-8ae4-41f347117645",
         "21a72960-a3ce-4965-906c-2f7fdae84ad1",
         "e6ac1067-2afd-44ea-a65e-bd491217a13a",
-        "f36841e9-2cfc-4940-921c-68e2ef84ce73"
+        "f36841e9-2cfc-4940-921c-68e2ef84ce73",
+        "f0eeec94-5905-4cfc-a5da-f32ba6af5cc5"
       ],
       "settings": {
         "custom_liquid": ""
