@@ -58,6 +58,62 @@
           "meganav_image_two_button_label": "Pedal Assemblies",
           "meganav_image_two_button_link": "shopify:\/\/collections"
         }
+      },
+      "product-bundle": {
+        "type": "product-bundle",
+        "blocks": {
+          "028f4eca-2df1-41df-ab38-cea572eb1d78": {
+            "type": "featured_heading",
+            "settings": {
+              "featured_heading": "test"
+            }
+          },
+          "4343c74a-ae5d-41c6-be01-02a9bbf3b909": {
+            "type": "featured_product",
+            "settings": {
+              "bundle_product": "",
+              "column_span": 1
+            }
+          },
+          "4b071ed3-77c2-4de1-aa94-41cf411dc52b": {
+            "type": "featured_product",
+            "settings": {
+              "bundle_product": "",
+              "column_span": 1
+            }
+          },
+          "ed214bed-d36a-4ec1-a14e-d30a8c9d43e4": {
+            "type": "featured_heading",
+            "settings": {
+              "featured_heading": ""
+            }
+          },
+          "6c946e58-91a0-4fb3-8f9a-fd88426cc4cb": {
+            "type": "featured_product",
+            "settings": {
+              "bundle_product": "",
+              "column_span": 1
+            }
+          },
+          "ab7834cc-7ae5-42c1-887b-68cbb083df60": {
+            "type": "featured_product",
+            "settings": {
+              "bundle_product": "",
+              "column_span": 1
+            }
+          }
+        },
+        "block_order": [
+          "028f4eca-2df1-41df-ab38-cea572eb1d78",
+          "4343c74a-ae5d-41c6-be01-02a9bbf3b909",
+          "4b071ed3-77c2-4de1-aa94-41cf411dc52b",
+          "ed214bed-d36a-4ec1-a14e-d30a8c9d43e4",
+          "6c946e58-91a0-4fb3-8f9a-fd88426cc4cb",
+          "ab7834cc-7ae5-42c1-887b-68cbb083df60"
+        ],
+        "settings": {
+          "custom_liquid": ""
+        }
       }
     },
     "content_for_index": [
