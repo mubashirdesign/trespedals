@@ -98,17 +98,31 @@
             "column_span": 1
           }
         },
-        "f36841e9-2cfc-4940-921c-68e2ef84ce73": {
-          "type": "featured_product",
-          "settings": {
-            "bundle_product": "",
-            "column_span": 1
-          }
-        },
         "f0eeec94-5905-4cfc-a5da-f32ba6af5cc5": {
           "type": "featured_heading",
           "settings": {
             "featured_heading": "Drivetrain Components"
+          }
+        },
+        "ff656063-d1d9-4086-8ce8-d61956b406ff": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "tremec-magnum-f-6-speed-transmission-2-66-first-gear",
+            "column_span": 1
+          }
+        },
+        "fea0f9ca-ce52-49cf-9ece-f58a9a49eea7": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "bellhousing-for-chevy-small-or-big-block-to-lt1-t56",
+            "column_span": 1
+          }
+        },
+        "8af8cf74-0bf0-479f-ae2e-b080b8e76dad": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "",
+            "column_span": 1
           }
         }
       },
@@ -127,8 +141,10 @@
         "9873aba4-48a6-40f5-8ae4-41f347117645",
         "21a72960-a3ce-4965-906c-2f7fdae84ad1",
         "e6ac1067-2afd-44ea-a65e-bd491217a13a",
-        "f36841e9-2cfc-4940-921c-68e2ef84ce73",
-        "f0eeec94-5905-4cfc-a5da-f32ba6af5cc5"
+        "f0eeec94-5905-4cfc-a5da-f32ba6af5cc5",
+        "ff656063-d1d9-4086-8ce8-d61956b406ff",
+        "fea0f9ca-ce52-49cf-9ece-f58a9a49eea7",
+        "8af8cf74-0bf0-479f-ae2e-b080b8e76dad"
       ],
       "settings": {
         "custom_liquid": ""
