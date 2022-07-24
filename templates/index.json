@@ -1,5 +1,47 @@
 {
   "sections": {
+    "1658664611ad51cf02": {
+      "type": "featured-collection",
+      "blocks": {
+        "d382b8b3-336e-4b70-9abd-f75ba53ac49b": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Featured Title",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-13.jpg",
+            "url": "shopify:\/\/pages\/contact"
+          }
+        },
+        "2c5a6ab9-fdfa-420f-8061-f07ef9521872": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Featured Title",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-4.jpg",
+            "url": ""
+          }
+        },
+        "70d36072-e34c-4cb0-8263-29887333ac06": {
+          "type": "featured-item",
+          "settings": {
+            "title": "Featured Title",
+            "sub_title": "Featured Sub Title",
+            "image": "shopify:\/\/shop_images\/rm-9023.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d382b8b3-336e-4b70-9abd-f75ba53ac49b",
+        "2c5a6ab9-fdfa-420f-8061-f07ef9521872",
+        "70d36072-e34c-4cb0-8263-29887333ac06"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "sub_title": "Featured collection Sub Title",
+        "style": "circle"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -12,6 +54,7 @@
     }
   },
   "order": [
+    "1658664611ad51cf02",
     "image_banner"
   ]
 }
