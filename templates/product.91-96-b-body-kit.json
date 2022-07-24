@@ -3,16 +3,39 @@
     "165867490877899797": {
       "type": "product-bundle",
       "blocks": {
+        "e00f82c2-d1ee-4bbb-865c-8c6835df7e30": {
+          "type": "featured_heading",
+          "settings": {
+            "featured_heading": "The Essentials"
+          }
+        },
         "342ae9fc-0688-44c9-a272-79a84e220141": {
           "type": "featured_product",
           "settings": {
             "bundle_product": "91-96-gm-b-body-integrated-clutch-and-brake-pedal-assembly",
             "column_span": 1
           }
+        },
+        "3a535645-d4c3-4aa0-b152-f52de6f6c367": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "b-body-clutch-hydraulics-package-7-8-mc-excl-hrb",
+            "column_span": 1
+          }
+        },
+        "3a6bff40-eabc-4bb8-a85b-dc4f919f725a": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "three-pedals-94-96-gm-b-body-t56-and-tr6060-crossmember",
+            "column_span": 1
+          }
         }
       },
       "block_order": [
-        "342ae9fc-0688-44c9-a272-79a84e220141"
+        "e00f82c2-d1ee-4bbb-865c-8c6835df7e30",
+        "342ae9fc-0688-44c9-a272-79a84e220141",
+        "3a535645-d4c3-4aa0-b152-f52de6f6c367",
+        "3a6bff40-eabc-4bb8-a85b-dc4f919f725a"
       ],
       "settings": {
         "custom_liquid": ""
