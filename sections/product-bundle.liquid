@@ -82,7 +82,7 @@
           <h1 class="text-xl font-extrabold tracking-tight text-gray-900 sm:text-xl pb-0">Information</h1>
 
           <h2 class="sr-only">Product information</h2>
-          <p class="text-lg text-gray-900 font-medium">Total: $192</p>
+          <p id="bundle-total" class="text-lg text-gray-900 font-medium">Total: $0</p>
   
           <!-- Reviews -->
       
@@ -90,6 +90,7 @@
             <h3 class="sr-only">Description</h3>
   
             <div class="space-y-6">
+              <span id="foo"></span>
               <p class="text-base text-gray-900">
 
                 Our Bigfastcar conversion kit makes it easy to put a T56 six speed manual transmission in your 1994 – 1996 Impala SS (see additional applications below). Our integrated clutch and brake pedal assembly fits right in place of your brake pedal assembly, and works with the Tilton Series 78 master cylinder.  To get you up and running quickly we offer a hydraulics package with all the parts you need to connect to your hydraulic release bearing or slave cylinder.  Our transmission crossmember accommodates either the first generation T56 or the current T56 Magnum. And our center console pieces complete the interior of your car, providing a factory look with a leather shift boot.
@@ -127,7 +128,7 @@
     
             <!-- Reviews -->
         
-            <form>
+            <product-bundle>
        
               <div>
              
@@ -164,12 +165,18 @@
                     width="{{ block.settings.bundle_product.featured_image.width }}"
                     height="{{ block.settings.bundle_product.featured_image.width | divided_by: block.settings.bundle_product.featured_image.aspect_ratio }}"
                   >
-                    <p class="text-xs text-gray-500 my-3">{{block.settings.bundle_product.title}}</p>
-                    </a>
-                    <input type="hidden" name="id" value="{{ block.settings.bundle_product.selected_or_first_available_variant.id }}" disabled>
+                    {% if block.settings.bundle_product_collection.collection != "" %}
+                      <a href="#" class="text-xs text-right my-1 font-medium text-indigo-600 hover:text-indigo-500">Change Selection</a>
+                    {% endif %}
 
-                    <button class="mt-auto w-full bg-primaryRed border border-transparent rounded-md py-1 px-8 flex items-center justify-center text-sm tracking-tighter font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add</button>
-                    </div>
+                    <p class="text-xs text-gray-500 my-2">{{block.settings.bundle_product.title}}</p>
+                    </a>
+                    {% if block.settings.bundle_product.selected_or_first_available_variant.inventory_quantity <= 0 and block.settings.bundle_product.selected_or_first_available_variant.inventory_policy != "continue" %}
+                    <button class="mt-auto w-full bg-gray-400 border border-transparent rounded-md py-1 px-4 flex items-center justify-center text-sm tracking-tighter font-medium text-black" disabled>Sold Out - {{ block.settings.bundle_product.selected_or_first_available_variant.price | money }}</button>
+                    {% else %}
+                    <button index="{{forloop.index0}}" product-title="{{block.settings.bundle_product.title}}" product-price="{{ block.settings.bundle_product.selected_or_first_available_variant.price }}" product-id="{{ block.settings.bundle_product.selected_or_first_available_variant.id }}" class="add-to-bundle mt-auto w-full bg-primaryRed border border-transparent rounded-md py-1 px-4 flex items-center justify-center text-sm tracking-tighter font-medium text-white">Add - {{ block.settings.bundle_product.selected_or_first_available_variant.price | money }}</button>
+                    {% endif %}  
+                  </div>
                 {% endif %}
 
                 {% endfor %}
@@ -183,8 +190,14 @@
                 </fieldset>
               </div>
     
-              <button type="submit" class="mt-10 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add to bag</button>
-            </form>
+              <button id="add-to-bundle" class="mt-10 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add to bag</button>
+            </product-bundle>
+
+
+
+
+
+
           <div class="mt-10">
             <h3 class="text-sm font-medium text-gray-900">Highlights</h3>
   
@@ -366,37 +379,98 @@
           </section>
         </div>
       </div>
-      <section aria-labelledby="related-products-heading" class="bg-white">
-        <div class="max-w-2xl mx-auto py-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 id="related-products-heading" class="text-xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
-  
-          <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            <div class="group relative">
-              <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
-              </div>
-              <div class="mt-4 flex justify-between">
-                <div>
-                  <h3 class="text-sm text-gray-700">
-                    <a href="#">
-                      <span aria-hidden="true" class="absolute inset-0"></span>
-                      Basic Tee
-                    </a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500">Black</p>
-                </div>
-                <p class="text-sm font-medium text-gray-900">$35</p>
-              </div>
-            </div>
-  
-            <!-- More products... -->
-          </div>
-        </div>
-      </section>
+ 
     </main>
  
   </div>
-  
+    
+  <script>
+    
+    class ProductBundle extends HTMLElement {
+      constructor() {
+        super();
+      }
+    
+      connectedCallback() {
+        let selectedItems = [];
+        let totalPrice = 0;
+        let selectedProductNames = [];
+
+        function makeUL(array) {
+          // Create the list element:
+          var list = document.createElement('ul');
+
+          for (var i = 0; i < array.length; i++) {
+              // Create the list item:
+              var item = document.createElement('li');
+
+              // Set its contents:
+              item.appendChild(document.createTextNode(array[i]));
+
+              // Add it to the list:
+              list.appendChild(item);
+          }
+
+          // Finally, return the constructed list:
+          return list;
+      }
+
+
+
+        this.addEventListener('click', function(e){
+          
+           if (e.target.classList.contains('add-to-bundle')){
+            let index = e.target.getAttribute('index');
+            let productId = e.target.getAttribute('product-id')
+            let productPrice = Number(e.target.getAttribute('product-price'));
+            let productName = e.target.getAttribute('product-title');
+
+            let arrayIndex = selectedItems.findIndex(selectedItems => selectedItems.id === Number(productId));
+            if (arrayIndex == -1) {
+              selectedItems.push({'id': Number(productId), 'quantity': 1});
+              selectedProductNames.push(productName)
+              totalPrice += productPrice
+              e.target.innerHTML = "Remove - $" + Number(e.target.getAttribute('product-price') / 100.00);
+              e.target.classList.add('bg-gray-800');
+              e.target.classList.remove('bg-primaryRed');
+              document.getElementById('foo').innerHTML = "";
+            } else {
+              selectedItems.splice(arrayIndex, 1);
+              selectedProductNames.splice(arrayIndex, 1)
+              totalPrice -= productPrice;
+              e.target.innerHTML = "Add - $" + Number(e.target.getAttribute('product-price') / 100.00);
+              e.target.classList.remove('bg-gray-800');
+              e.target.classList.add('bg-primaryRed');
+              document.getElementById('foo').innerHTML = "";
+            }
+            document.getElementById('foo').appendChild(makeUL(selectedProductNames));
+            document.getElementById('bundle-total').innerHTML = "Total: $" + (totalPrice / 100);
+           }
+           //clear empty values
+         
+
+           if (e.target.id == "add-to-bundle") {
+
+              fetch('/cart/add.js', {
+                method: 'post',
+                headers: {
+                  'Accept': 'application/json, text/plain, */*',
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ items: selectedItems})}).then(res => res.json()).then(res => location.href = "/cart");
+           }    
+        });
+        
+    
+   
+    
+      }
+    
+      
+    }
+    
+    customElements.define('product-bundle', ProductBundle);
+    </script>
 
   {% schema %}
 {
@@ -420,6 +494,12 @@
                 "id": "bundle_product",
                 "label": "Bundle Product",
                 "info": "Select product that you want to appear under the bundle"
+            },
+            {
+              "type": "collection",
+              "id": "bundle_product_collection",
+              "label": "Product Options",
+              "info": "If the bundle option has multiple selections add the collection"
             },
             {
                 "type": "number",
