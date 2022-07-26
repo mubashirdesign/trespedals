@@ -43,15 +43,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "1996-impala-ss-manual-transmission-console-insert",
-            "bundle_product_collection": "",
-            "column_span": 1
-          }
-        },
-        "7ea25d61-b3d2-4aec-b9b8-be372358d671": {
-          "type": "featured_product",
-          "settings": {
-            "bundle_product": "1994-1995-impala-ss-manual-transmission-console-insert",
-            "bundle_product_collection": "",
+            "bundle_product_collection": "impala-ss-center-console-inserts",
             "column_span": 1
           }
         },
@@ -67,6 +59,14 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "three-pedals-logo-billet-aluminum-6-speed-shift-knob",
+            "bundle_product_collection": "",
+            "column_span": 1
+          }
+        },
+        "1741e893-e7db-455b-9ece-e9f6e5f30037": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "mr-gasket-shifter-boot-large",
             "bundle_product_collection": "",
             "column_span": 1
           }
@@ -147,9 +147,9 @@
         "3a6bff40-eabc-4bb8-a85b-dc4f919f725a",
         "c64b8bcf-b3c1-4960-a8d3-f0586656e172",
         "211f32ad-f037-4e52-b636-9a08b6128156",
-        "7ea25d61-b3d2-4aec-b9b8-be372358d671",
         "81c17918-8ec9-4bed-9ef7-3208de7003e9",
         "6a814382-59ed-4645-9d3a-a44dbc1781fd",
+        "1741e893-e7db-455b-9ece-e9f6e5f30037",
         "7ae3ec2a-3dfc-49b1-83ae-b0ad0a0b6e51",
         "3dd0a4e8-efc9-4441-9a2f-97c7f73a8c49",
         "9873aba4-48a6-40f5-8ae4-41f347117645",
