@@ -13,6 +13,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "91-96-gm-b-body-integrated-clutch-and-brake-pedal-assembly",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -20,6 +21,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "b-body-clutch-hydraulics-package-7-8-mc-excl-hrb",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -27,6 +29,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "three-pedals-94-96-gm-b-body-t56-and-tr6060-crossmember",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -40,6 +43,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "1996-impala-ss-manual-transmission-console-insert",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -47,6 +51,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "1994-1995-impala-ss-manual-transmission-console-insert",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -54,6 +59,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "hurst-replacement-competition-plus-stick-7-1-2-straight",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -61,6 +67,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "three-pedals-logo-billet-aluminum-6-speed-shift-knob",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -74,6 +81,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "cruise-control-harness",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -81,6 +89,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "cruise-control-interrupt-switch",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -88,6 +97,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "gm-oem-neutral-safety-switch",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -95,6 +105,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "smp-t56-reverse-light-harness",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -108,6 +119,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "tremec-magnum-f-6-speed-transmission-2-66-first-gear",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -115,6 +127,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "bellhousing-for-chevy-small-or-big-block-to-lt1-t56",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
@@ -122,6 +135,7 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "ram-clutches-lt1-t56-muscle-car-clutch",
+            "bundle_product_collection": "lt1-clutch-kits",
             "column_span": 1
           }
         }
