@@ -14,7 +14,7 @@ class ProductGallery extends HTMLElement {
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
-            
+            direction: 'vertical'
             
           });
 

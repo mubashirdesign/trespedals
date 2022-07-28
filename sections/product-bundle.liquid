@@ -30,44 +30,35 @@
         <ol role="list" class="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
           <li>
             <div class="flex items-center">
-              <a href="#" class="mr-2 text-sm font-medium text-gray-900"> Men </a>
+              <a href="/" class="mr-2 text-sm font-medium text-gray-900">Home</a>
               <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-5 text-gray-300">
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
             </div>
           </li>
-  
+
+          {% if product.collections[0].url != blank %}
           <li>
             <div class="flex items-center">
-              <a href="#" class="mr-2 text-sm font-medium text-gray-900"> Clothing </a>
+              <a href="{{product.collections[0].url}}" class="mr-2 text-sm font-medium text-gray-900">{{product.collections[0].title}}</a>
               <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-5 text-gray-300">
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
             </div>
           </li>
+          {% endif %}
   
           <li class="text-sm">
-            <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600"> The Big Fast Car Package </a>
+            <a href="{{product.url}}" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">{{ product.title }}</a>
           </li>
         </ol>
       </nav>
+
+
   
       <!-- Image gallery -->
-      <div class="mt-6 max-w-2xl mx-auto sm:px-6 md:max-w-7xl md:grid md:grid-cols-3 md:gap-x-8 md:px-8">
-        <div class="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden md:block">
-          <img src="https://cdn.shopify.com/s/files/1/0612/9644/3607/files/Three_Pedals_T56_billet_shift_knob-13.jpg?v=1655377447" alt="Two each of gray, white, and black shirts laying flat." class="w-full h-full object-center object-cover">
-        </div>
-        <div class="hidden md:grid md:grid-cols-1 md:gap-y-8">
-          <div class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-            <img src="https://cdn.shopify.com/s/files/1/0612/9644/3607/files/Three_Pedals_3P2-13.jpg?v=1655377207" alt="Model wearing plain black basic tee." class="w-full h-full object-center object-cover">
-          </div>
-          <div class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-            <img src="https://cdn.shopify.com/s/files/1/0612/9644/3607/files/Three_Pedals_Tremec_Magnum-F-8_1.jpg?v=1655376859" alt="Model wearing plain gray basic tee." class="w-full h-full object-center object-cover">
-          </div>
-        </div>
-        <div class="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden md:aspect-w-3 md:aspect-h-4">
-          <img src="https://cdn.shopify.com/s/files/1/0612/9644/3607/files/Three_Pedals_3PGMB001_GM_B-Body_Pedal.jpg?v=1655207587" alt="Model wearing plain white basic tee." class="w-full h-full object-center object-cover">
-        </div>
+      <div class="mt-6 max-w-2xl mx-auto sm:px-6 md:max-w-7xl md:px-8">
+        {% render 'product-gallery' %}
       </div>
   
       <!-- Product info -->
