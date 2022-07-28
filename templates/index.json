@@ -58,7 +58,7 @@
           "type": "featured-item",
           "settings": {
             "title": "Transmissions",
-            "sub_title": "Featured Sub Title",
+            "sub_title": "& Accessories",
             "image": "shopify:\/\/shop_images\/Three_Pedals_Tremec_Magnum-F-8_1.jpg",
             "url": ""
           }
@@ -98,30 +98,6 @@
             "image": "shopify:\/\/shop_images\/537-cf6769-400.jpg",
             "url": ""
           }
-        },
-        "1bc95fb2-6edb-4761-85c3-7541c4c5b11c": {
-          "type": "featured-item",
-          "settings": {
-            "title": "Crossmembers",
-            "sub_title": "Featured Sub Title",
-            "url": ""
-          }
-        },
-        "1e3c0188-db54-43e0-b633-e72086a101be": {
-          "type": "featured-item",
-          "settings": {
-            "title": "Consoles",
-            "sub_title": "Featured Sub Title",
-            "url": ""
-          }
-        },
-        "5cc34feb-a878-4ce9-90cc-b9ef26f9f942": {
-          "type": "featured-item",
-          "settings": {
-            "title": "Featured Title",
-            "sub_title": "Featured Sub Title",
-            "url": ""
-          }
         }
       },
       "block_order": [
@@ -130,10 +106,7 @@
         "5b4c43bb-c1a8-436d-aa90-02d106299a0c",
         "4a6f383a-8443-42e0-aa27-768b109d3548",
         "24de2c01-f0e4-4f1b-9ea2-96c34a1df8ae",
-        "3b13001a-aa97-4ac7-9871-b1eb681772ab",
-        "1bc95fb2-6edb-4761-85c3-7541c4c5b11c",
-        "1e3c0188-db54-43e0-b633-e72086a101be",
-        "5cc34feb-a878-4ce9-90cc-b9ef26f9f942"
+        "3b13001a-aa97-4ac7-9871-b1eb681772ab"
       ],
       "settings": {
         "title": "Shop By Category",
