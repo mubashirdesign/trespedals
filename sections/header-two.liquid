@@ -336,7 +336,7 @@
                                   <ul role="list" aria-labelledby="Clothing-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
                                     {% for grandchildlink in childlink.links %}
                                     <li class="flex">
-                                      <a href="{{ grandchildlink.url }}" class="hover:text-gray-800">{{ grandchildlink.title }}</a>
+                                      <a href="{{ grandchildlink.url }}" class="font-medium text-black hover:text-gray-800">{{ grandchildlink.title }}</a>
                                     </li>
                                     {% endfor %}
                                 
@@ -370,9 +370,9 @@
                 <div class="flex items-center lg:ml-8">
                   
                   <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                    <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
+                    <a href="/account" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
                     <span class="h-6 w-px bg-gray-200" aria-hidden="true"></span>
-                    <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Create account</a>
+                    <a href="/account/register" class="text-sm font-medium text-white hover:text-gray-100">Create account</a>
                   </div>
       
            
