@@ -12,7 +12,7 @@ class ProductGallery extends HTMLElement {
         var ThumbnailSlider = new Swiper(document.querySelector('thumbnail-slider'), {
             loop: false,
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 6,
             freeMode: true,
             direction: 'vertical'
             

@@ -27,10 +27,10 @@
   
     <main class="pt-10 sm:pt-16">
       <nav aria-label="Breadcrumb">
-        <ol role="list" class="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
+        <ol role="list" class="mx-auto px-4 flex items-center space-x-2 sm:px-6 max-w-7xl lg:px-8">
           <li>
             <div class="flex items-center">
-              <a href="/" class="mr-2 text-sm font-medium text-gray-900">Home</a>
+              <a href="/" class="mr-2 text-xs lg:text-base font-medium text-gray-900">Home</a>
               <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-5 text-gray-300">
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
@@ -38,9 +38,9 @@
           </li>
 
           {% if product.collections[0].url != blank %}
-          <li>
+          <li class="hidden md:block">
             <div class="flex items-center">
-              <a href="{{product.collections[0].url}}" class="mr-2 text-sm font-medium text-gray-900">{{product.collections[0].title}}</a>
+              <a href="{{product.collections[0].url}}" class="mr-2 text-xs lg:text-base font-medium text-gray-900">{{product.collections[0].title}}</a>
               <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-5 text-gray-300">
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
@@ -49,16 +49,22 @@
           {% endif %}
   
           <li class="text-sm">
-            <a href="{{product.url}}" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">{{ product.title }}</a>
+            <a href="{{product.url}}" aria-current="page" class="text-xs lg:text-base font-medium text-gray-500 hover:text-gray-600">{{ product.title }}</a>
           </li>
         </ol>
       </nav>
 
+      <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl mx-auto px-4 flex items-center space-x-2 sm:px-6 max-w-7xl lg:px-8 pb-0">{{ product.title }}</h1>
 
   
       <!-- Image gallery -->
-      <div class="mt-6 max-w-2xl mx-auto sm:px-6 md:max-w-7xl md:px-8">
+      <div class="mt-6 mx-auto sm:px-6 max-w-7xl md:px-8 flex flex-col lg:flex-row">
+        <div class="flex-1 w-full">
         {% render 'product-gallery' %}
+      </div>
+        <div class="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0 w-full lg:max-w-[30%] lg:ml-[32px] break-words">
+          {{product.description}}
+        </div>
       </div>
   
       <!-- Product info -->
@@ -87,9 +93,7 @@
             </div>
           </div>
           <button id="add-to-bundle" class="mb-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add Kit To Cart</button>
-          <span class="hidden md:block">
-          {{product.description}}
-          </span>
+    
         </div>
   
         <div class="py-4 md:py-4 md:pb-16 md:col-start-1 md:col-span-2 md:border-r md:border-gray-200 md:pr-8">
