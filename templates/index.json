@@ -8,7 +8,7 @@
           "settings": {
             "title": "Conversion Kit",
             "sub_title": "1991 – 1996 GM B-Body",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-13.jpg",
+            "image": "shopify:\/\/shop_images\/Three_Pedals_1996_Impala_GenV_LT1_T56-158.jpg",
             "url": "shopify:\/\/products\/1991-1996-gm-b-body-conversion-kit"
           }
         },
@@ -17,7 +17,7 @@
           "settings": {
             "title": "Conversion Kit",
             "sub_title": "1977 – 1990 GM B-Body",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
+            "image": "shopify:\/\/shop_images\/Safari-Hoonigan-by-on.the_.grid-v3-1200x630.jpg",
             "url": ""
           }
         },
@@ -40,16 +40,6 @@
         "title": "Welcome to Three Pedals",
         "sub_title": "The home of the manual swap, shop our conversion kits below",
         "style": "circle"
-      }
-    },
-    "image_banner": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Three_Pedals_1996_Impala_GenV_LT1_T56-159-1200x607.jpg",
-        "heading": "",
-        "subheading": "",
-        "button_label": "",
-        "button_link": ""
       }
     },
     "16586690029da88f5f": {
@@ -147,28 +137,24 @@
       ],
       "settings": {
         "title": "Shop By Category",
-        "sub_title": "Featured collection Sub Title",
+        "sub_title": "Our mission at Three Pedals is to help driving enthusiasts get more enjoyment out of their vehicles.  Since cars with a manual transmission are more fun, we make parts to convert cars from automatic to manual.  We also swap engines, always for more power and usually for more modern technology.",
         "style": "grid"
       }
     },
-    "16586696540c8b8556": {
-      "type": "featured-blog",
+    "16589683354d3169e6": {
+      "type": "image-banner",
       "settings": {
-        "heading": "Blog posts",
-        "blog": "news",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
+        "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
+        "heading": "“The pedals and shifter feel and look as though they could have been a factory installation: That crisp, six-speed stick really wakes up the car.”",
+        "subheading": "– “Stick it To ‘Em”, AutoWeek Magazine, May 15, 2017",
+        "button_label": "Read Here",
+        "button_link": "shopify:\/\/pages\/contact"
       }
     }
   },
   "order": [
     "1658664611ad51cf02",
-    "image_banner",
     "16586690029da88f5f",
-    "16586696540c8b8556"
+    "16589683354d3169e6"
   ]
 }
