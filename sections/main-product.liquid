@@ -1,30 +1,8 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-{% assign disabled = false %}
-  {% for tag in product.tags %}
-    {% if tag == "disabled" %}
-      {% assign disabled = true %}
-    {% endif %}
-{% endfor %}
 
-<div class="bg-gray-50 pt-16">
+
+<div class="bg-gray-50 pt-8 md:pt-16">
  
-  <div class="max-w-2xl mx-auto pb-4 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+  <div class="mx-auto pb-4 px-4 sm:px-6 max-w-7xl lg:px-8">
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav aria-label="Breadcrumb">
       <ol role="list" class="mx-auto flex items-center space-x-2 max-w-7xl">
@@ -54,16 +32,16 @@
       </ol>
     </nav>
 
-    <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl mx-auto flex items-center space-x-2 max-w-7xl pb-0">{{ product.title }}</h1>
+    <h1 class="text-lg mt-4 sm:mt-0 font-extrabold tracking-tight text-gray-900 sm:text-3xl mx-auto flex items-center space-x-2 max-w-7xl pb-0">{{ product.title }}</h1>
 
 
 
-    <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-6">
+    <div class="md:grid md:grid-cols-2 md:gap-x-4 mt-6">
       <!-- Image gallery -->
       {% render 'product-gallery' %}
 
       <!-- Product info -->
-      <div class="mt-10 ml-[32px] px-4 sm:px-0 sm:mt-16 lg:mt-0">
+      <div class="mt-10 md:ml-[16px] lg:ml-[32px] px-4 sm:px-0 sm:mt-16 md:mt-0">
 
   
         <div id="ProductInfo-{{ section.id }}" class="product__info-container">
@@ -226,18 +204,7 @@
               <div class="mt-3 flex flex-col" {{ block.shopify_attributes }}>
                 
                 
-                {% if disabled == true %}
-                <a href="mailto:dan.ferraro@clearimageautomotive.com?subject=Interested In Purchasing {{ product.title }}&body=Please provide the SKU number based on your selection"
-                class="max-w-xs flex-1 bg-lightPrimaryBlue border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
-                >
-                   Contact Us To Place Order
-                   <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                  </svg>
-                  </a>
-                  <p class="mt-2 text-lightPrimaryBlue">or call us at <a class="font-medium hover:underline" href="tel:+1-425-251-0329">+1-425-251-032</a></p>
-                {% else %}
+           
                 {%- if product != blank -%}
                   <product-form class="product-form">
                     <div class="product-form__error-message-wrapper mb-3" role="alert" hidden>
@@ -260,7 +227,7 @@
                         <button
                           type="submit"
                           name="add"
-                          class="product-form__submit max-w-xs flex-1 bg-lightPrimaryBlue border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                          class="product-form__submit max-w-xs flex-1 bg-primaryRed border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                         {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                         >
                             <span>
@@ -293,7 +260,6 @@
                   </div>
               {%- endif -%}
 
-                {% endif %}
               </div>
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}

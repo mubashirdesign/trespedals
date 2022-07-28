@@ -48,7 +48,7 @@
           To: "-translate-x-full"
       -->
       <div class="relative max-w-xs w-full bg-gray-900 shadow-xl pb-12 flex flex-col overflow-y-auto">
-        <div class="px-4 pt-5 pb-5 bg-lightPrimaryBlue flex justify-between">
+        <div class="px-4 pt-5 pb-5 bg-black flex justify-between">
           <a href="{{ routes.root_url }}">
             <span class="sr-only">Workflow</span>
 
@@ -107,11 +107,11 @@
                       height="{{ section.settings._image_one.width | divided_by: section.settings._image_one.aspect_ratio }}"
                     >                  
                   </div>
-                    <a href="{{ section.settings.meganav_image_one_button_link }}" class="mt-6 block font-medium text-gray-900">
+                    <a href="{{ section.settings.meganav_image_one_button_link }}" class="mt-6 block font-medium text-white">
                       <span class="absolute z-10 inset-0" aria-hidden="true"></span>
                       {{ section.settings.meganav_image_one_button_label }}
                     </a>
-                  <p aria-hidden="true" class="mt-1">Shop now</p>
+                  <p aria-hidden="true" class="mt-1 text-primaryRed">Shop now</p>
                 </div>
                 {% endif %}
 
@@ -139,11 +139,11 @@
                     height="{{ section.settings.image_two.width | divided_by: section.settings.image_two.aspect_ratio }}"
                   >
                   </div>
-                  <a href="{{ section.settings.meganav_image_two_button_link }}" class="mt-6 block font-medium text-gray-900">
+                  <a href="{{ section.settings.meganav_image_two_button_link }}" class="mt-6 block font-medium text-white">
                     <span class="absolute z-10 inset-0" aria-hidden="true"></span>
                     {{ section.settings.meganav_image_two_button_label }}
                   </a>
-                  <p aria-hidden="true" class="mt-1">Shop now</p>
+                  <p aria-hidden="true" class="mt-1 text-primaryRed">Shop now</p>
                 </div>
                 {% endif %}
               </div>
@@ -219,7 +219,7 @@
             
               </div>
 
-              <div class="flex ml-4 lg:ml-0">
+              <div class="flex ml-0">
                 <a href="{{shop.url}}">
                   <span class="sr-only">Workflow</span>
                   {%- if section.settings.logo != blank -%}
@@ -393,10 +393,10 @@
                   <div class="flow-root md:ml-6">
                     <a href="/cart" class="group -m-2 p-2 flex items-center" id="cart-icon-bubble">
                       <!-- Heroicon name: outline/shopping-cart -->
-                      <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                      <svg class="flex-shrink-0 h-6 w-6 text-primaryRed group-hover:text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
-                      <span class="ml-2 text-sm font-medium text-white group-hover:text-lightPrimaryBlue">{{ cart.item_count }}</span>
+                      <span class="ml-2 text-sm font-medium text-white group-hover:text-primaryRed">{{ cart.item_count }}</span>
                       <span class="sr-only">items in cart, view bag</span>
                     </a>
                   </div>
