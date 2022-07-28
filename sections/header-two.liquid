@@ -331,7 +331,7 @@
                                 {% for childlink in link.links %}
     
                                 <div>
-                                  <p class="font-medium text-gray-900">{{ childlink.title }}</p>
+                                  <a href="{{childlink.url}}" class="font-extrabold text-primaryRed">{{ childlink.title }}</a>
                                   {% if childlink.links != blank %}
                                   <ul role="list" aria-labelledby="Clothing-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
                                     {% for grandchildlink in childlink.links %}
