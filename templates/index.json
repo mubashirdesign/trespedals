@@ -116,6 +116,7 @@
     },
     "16590952738dccb4da": {
       "type": "main-our-mission",
+      "disabled": true,
       "blocks": {
         "1659095273d9daec17-0": {
           "type": "heading",
