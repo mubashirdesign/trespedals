@@ -18,7 +18,7 @@ class ProductBundle extends HTMLElement {
 
             // Set its contents:
             item.appendChild(document.createTextNode(array[i]));
-            item.classList.add('py-2','text-sm', 'font-light', 'italic');
+            item.classList.add('py-2','text-sm', 'font-light', 'italic', 'text-gray-100');
 
             // Add it to the list:
             list.appendChild(item);
