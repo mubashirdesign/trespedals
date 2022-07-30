@@ -114,6 +114,17 @@
         "style": "grid"
       }
     },
+    "16589683354d3169e6": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
+        "image_2": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-13.jpg",
+        "heading": "“The pedals and shifter feel and look as though they could have been a factory installation: That crisp, six-speed stick really wakes up the car.”",
+        "subheading": "– “Stick it To ‘Em”, AutoWeek Magazine, May 15, 2017",
+        "button_label": "Read Here",
+        "button_link": "shopify:\/\/pages\/contact"
+      }
+    },
     "16590952738dccb4da": {
       "type": "main-our-mission",
       "blocks": {
@@ -156,23 +167,12 @@
         "title": "See Our Builds In Action!",
         "sub_title": ""
       }
-    },
-    "16589683354d3169e6": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
-        "image_2": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-13.jpg",
-        "heading": "“The pedals and shifter feel and look as though they could have been a factory installation: That crisp, six-speed stick really wakes up the car.”",
-        "subheading": "– “Stick it To ‘Em”, AutoWeek Magazine, May 15, 2017",
-        "button_label": "Read Here",
-        "button_link": "shopify:\/\/pages\/contact"
-      }
     }
   },
   "order": [
     "1658664611ad51cf02",
     "16586690029da88f5f",
-    "16590952738dccb4da",
-    "16589683354d3169e6"
+    "16589683354d3169e6",
+    "16590952738dccb4da"
   ]
 }
