@@ -38,10 +38,10 @@
       <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-2">
         {% for block in section.blocks %}
 
-        <a href="{{block.settings.url}}" class="flex flex-col bg-primaryRed rounded-md hover:bg-opacity-80 transition duration-500">
+        <a href="{{block.settings.url}}" class="flex flex-col bg-primaryRed shadow-xl rounded-md hover:shadow-2xl transition duration-500">
           
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-            {% if block.settings.logo != blank %}
+            {% if block.settings.logo_image != blank %}
             <div class="absolute top-0 p-5 inline-block bg-transparent rounded-xl transform left-0 right-0 -translate-y-1/2">
               <!-- Heroicon name: outline/phone -->
               <img
@@ -80,9 +80,9 @@
                 {%- if block.settings.card_image.width >= 3840 -%}{{ block.settings.card_image | img_url: '3840x' }} 3840w,{%- endif -%}
                 {{ block.settings.card_image | img_url: 'master' }} {{ block.settings.card_image.width }}w"
               sizes="100vw"
-              src="{{ block.settings.card_image | img_url: '1500x' }}"
+              src="{{ block.settings.card_image | img_url: '500x' }}"
               loading="lazy"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover rounded-br-2xl rounded-bl-2xl "
               alt="{{ block.settings.card_image.alt | escape }}"
               width="{{ block.settings.card_image.width }}"
               height="{{ block.settings.card_image.width | divided_by: block.settings.card_image.aspect_ratio }}"
@@ -136,11 +136,6 @@
         "id": "sub_title",
         "default": "Featured Sub Title",
         "label": "Title (Only applies to grid layout)"
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Featured Image"
       },
       {
         "type": "url",
