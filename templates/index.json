@@ -141,7 +141,8 @@
           "settings": {
             "title": "Car Craft Malibu",
             "sub_title": "Featured Sub Title",
-            "url": ""
+            "url": "",
+            "card_image": "shopify:\/\/shop_images\/020-1978-malibu-gold-burnout.png"
           }
         }
       },
