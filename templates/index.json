@@ -120,7 +120,7 @@
         "de930045-6b31-40d5-9bbb-5c6cc39370e2": {
           "type": "featured-item",
           "settings": {
-            "title": "Featured Title",
+            "title": "FAQs",
             "sub_title": "Featured Sub Title",
             "url": ""
           }
@@ -128,7 +128,7 @@
         "52e18a50-e64c-4054-81fd-bb6edcac195b": {
           "type": "featured-item",
           "settings": {
-            "title": "Featured Title",
+            "title": "Contact Us",
             "sub_title": "Featured Sub Title",
             "url": ""
           }
@@ -136,7 +136,7 @@
         "6dd32d66-31b3-4c81-9730-a1f0157b6ed9": {
           "type": "featured-item",
           "settings": {
-            "title": "Featured Title",
+            "title": "Our Builds",
             "sub_title": "Featured Sub Title",
             "url": ""
           }
@@ -148,8 +148,8 @@
         "6dd32d66-31b3-4c81-9730-a1f0157b6ed9"
       ],
       "settings": {
-        "title": "Featured collection",
-        "sub_title": "Featured collection Sub Title"
+        "title": "Information Library",
+        "sub_title": "So you want to convert to a manual transmission, do ya?  Well you’ve come to the right spot – within the right place – because this here is our comprehensive FAQ on all the things involved with the conversion."
       }
     },
     "16589683354d3169e6": {
