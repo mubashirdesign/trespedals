@@ -120,23 +120,26 @@
         "de930045-6b31-40d5-9bbb-5c6cc39370e2": {
           "type": "featured-item",
           "settings": {
-            "title": "FAQs",
+            "title": "Shaken & Stirred",
             "sub_title": "Featured Sub Title",
-            "url": ""
+            "url": "",
+            "logo_image": "shopify:\/\/shop_images\/shaken-and-stirred-logo-v2.png",
+            "card_image": "shopify:\/\/shop_images\/Three_Pedals_Shaken_and_Stirred_ISSCA_2017-2-1200x1184.jpg"
           }
         },
         "52e18a50-e64c-4054-81fd-bb6edcac195b": {
           "type": "featured-item",
           "settings": {
-            "title": "Contact Us",
+            "title": "SSubtle Take",
             "sub_title": "Featured Sub Title",
-            "url": ""
+            "url": "",
+            "card_image": "shopify:\/\/shop_images\/LT1IMPALASS-3.jpg"
           }
         },
         "6dd32d66-31b3-4c81-9730-a1f0157b6ed9": {
           "type": "featured-item",
           "settings": {
-            "title": "Our Builds",
+            "title": "Car Craft Malibu",
             "sub_title": "Featured Sub Title",
             "url": ""
           }
@@ -148,8 +151,9 @@
         "6dd32d66-31b3-4c81-9730-a1f0157b6ed9"
       ],
       "settings": {
-        "title": "Information Library",
-        "sub_title": "So you want to convert to a manual transmission, do ya?  Well you’ve come to the right spot – within the right place – because this here is our comprehensive FAQ on all the things involved with the conversion."
+        "background_image": "shopify:\/\/shop_images\/Three_Pedals_CCMalibu_by_Autocentric_Media.jpg",
+        "title": "See Our Builds In Action!",
+        "sub_title": ""
       }
     },
     "16589683354d3169e6": {
