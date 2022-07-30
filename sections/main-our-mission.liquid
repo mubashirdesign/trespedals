@@ -3,7 +3,26 @@
     <!-- Header -->
     <div class="relative pb-32 bg-gray-800">
       <div class="absolute inset-0">
-        <img class="w-full h-full object-cover" src="https://cdn.shopify.com/s/files/1/0612/9644/3607/files/Three_Pedals_1996_Impala_GenV_LT1_T56-159-1200x607.jpg?v=1655376370" alt="">
+        <img
+        srcset="{%- if section.settings.background_image.width >= 375 -%}{{ section.settings.background_image | img_url: '375x' }} 375w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 750 -%}{{ section.settings.background_image | img_url: '750x' }} 750w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 1100 -%}{{ section.settings.background_image | img_url: '1100x' }} 1100w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 1500 -%}{{ section.settings.background_image | img_url: '1500x' }} 1500w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 1780 -%}{{ section.settings.background_image | img_url: '1780x' }} 1780w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 2000 -%}{{ section.settings.background_image | img_url: '2000x' }} 2000w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 3000 -%}{{ section.settings.background_image | img_url: '3000x' }} 3000w,{%- endif -%}
+          {%- if section.settings.background_image.width >= 3840 -%}{{ section.settings.background_image | img_url: '3840x' }} 3840w,{%- endif -%}
+          {{ section.settings.background_image | img_url: 'master' }} {{ section.settings.background_image.width }}w"
+        sizes="100vw"
+        src="{{ section.settings.background_image | img_url: '1500x' }}"
+        loading="lazy"
+        class="w-full h-full object-cover"
+        alt="{{ section.settings.background_image.alt | escape }}"
+        width="{{ section.settings.background_image.width }}"
+        height="{{ section.settings.background_image.width | divided_by: section.settings.background_image.aspect_ratio }}"
+      />
+
+
         <div class="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true"></div>
       </div>
       <div class="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -19,22 +38,58 @@
       <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-2">
         {% for block in section.blocks %}
 
-        <div class="flex flex-col bg-primaryRed" style="transform: skewX(-12deg);">
+        <a href="{{block.settings.url}}" class="flex flex-col bg-primaryRed rounded-md hover:bg-opacity-80 transition duration-500">
           
-          <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8" style="transform: skewX(12deg);">
-            <div class="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
+          <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+            {% if block.settings.logo != blank %}
+            <div class="absolute top-0 p-5 inline-block bg-transparent rounded-xl transform left-0 right-0 -translate-y-1/2">
               <!-- Heroicon name: outline/phone -->
-              <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
+              <img
+              srcset="{%- if block.settings.logo_image.width >= 375 -%}{{ block.settings.logo_image | img_url: '375x' }} 375w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 750 -%}{{ block.settings.logo_image | img_url: '750x' }} 750w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 1100 -%}{{ block.settings.logo_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 1500 -%}{{ block.settings.logo_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 1780 -%}{{ block.settings.logo_image | img_url: '1780x' }} 1780w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 2000 -%}{{ block.settings.logo_image | img_url: '2000x' }} 2000w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 3000 -%}{{ block.settings.logo_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                {%- if block.settings.logo_image.width >= 3840 -%}{{ block.settings.logo_image | img_url: '3840x' }} 3840w,{%- endif -%}
+                {{ block.settings.logo_image | img_url: 'master' }} {{ block.settings.logo_image.width }}w"
+              sizes="100vw"
+              src="{{ block.settings.logo_image | img_url: '1500x' }}"
+              loading="lazy"
+              alt="{{ block.settings.logo_image.alt | escape }}"
+              width="{{ block.settings.logo_image.width }}"
+              height="{{ block.settings.logo_image.width | divided_by: block.settings.logo_image.aspect_ratio }}"
+            />
+
             </div>
+            {% endif %}
             <h3 class="text-xl font-medium text-white">{{block.settings.title}}</h3>
             <p class="mt-4 text-base text-gray-100">{{block.settings.sub_title}}</p>
           </div>
-          <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-            <a href="#" class="text-base font-medium text-indigo-700 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+          <div class="p-6 h-[300px] bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8 relative">
+            <div class="absolute inset-0">
+              <img
+              srcset="{%- if block.settings.card_image.width >= 375 -%}{{ block.settings.card_image | img_url: '375x' }} 375w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 750 -%}{{ block.settings.card_image | img_url: '750x' }} 750w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 1100 -%}{{ block.settings.card_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 1500 -%}{{ block.settings.card_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 1780 -%}{{ block.settings.card_image | img_url: '1780x' }} 1780w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 2000 -%}{{ block.settings.card_image | img_url: '2000x' }} 2000w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 3000 -%}{{ block.settings.card_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                {%- if block.settings.card_image.width >= 3840 -%}{{ block.settings.card_image | img_url: '3840x' }} 3840w,{%- endif -%}
+                {{ block.settings.card_image | img_url: 'master' }} {{ block.settings.card_image.width }}w"
+              sizes="100vw"
+              src="{{ block.settings.card_image | img_url: '1500x' }}"
+              loading="lazy"
+              class="w-full h-full object-cover"
+              alt="{{ block.settings.card_image.alt | escape }}"
+              width="{{ block.settings.card_image.width }}"
+              height="{{ block.settings.card_image.width | divided_by: block.settings.card_image.aspect_ratio }}"
+            />
+            </div>
           </div>
-        </div>
+        </a>
         {% endfor %}
 
 
@@ -49,7 +104,7 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "image",
+        "id": "background_image",
         "label": "t:sections.image-with-text.settings.image.label"
       },
       {
@@ -91,6 +146,16 @@
         "type": "url",
         "id": "url",
         "label": "URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_image",
+        "label": "Card Logo Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "card_image",
+        "label": "Image For Card"
       }
       ]  
     }
