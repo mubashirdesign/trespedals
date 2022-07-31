@@ -145,7 +145,7 @@
                   >
                 
                     
-                  <a href="{{block.settings.bundle_product.url}}"><p class="product-bundle-title text-xs text-gray-500 my-2">{{block.settings.bundle_product.title}}</p></a>
+                  <a href="{{block.settings.bundle_product.url}}" class="mb-auto"><p class="product-bundle-title text-xs text-gray-500 my-2">{{block.settings.bundle_product.title}}</p></a>
                     {% if block.settings.bundle_product_collection != blank %}
                     <button index="{{forloop.index0}}" class="product-bundle-options text-xs text-right my-1 font-medium text-indigo-600 hover:text-indigo-500">Change Selection</button>
                   
@@ -156,7 +156,7 @@
                     {% if block.settings.bundle_product.selected_or_first_available_variant.inventory_quantity <= 0 and block.settings.bundle_product.selected_or_first_available_variant.inventory_policy != "continue" %}
                     <button class="mt-auto w-full bg-gray-400 border border-transparent rounded-md py-1 px-4 flex items-center justify-center text-sm tracking-tighter font-medium text-black" disabled>Sold Out - {{ block.settings.bundle_product.selected_or_first_available_variant.price | money }}</button>
                     {% else %}
-                    <button index="{{forloop.index0}}" product-title="{{block.settings.bundle_product.title}}" product-price="{{ block.settings.bundle_product.selected_or_first_available_variant.price }}" product-id="{{ block.settings.bundle_product.selected_or_first_available_variant.id }}" class="add-to-bundle mt-auto w-full bg-primaryRed border border-transparent rounded-md py-1 px-4 flex items-center justify-center text-sm tracking-tighter font-medium text-white">Add - {{ block.settings.bundle_product.selected_or_first_available_variant.price | money }}</button>
+                    <button index="{{forloop.index0}}" product-title="{{block.settings.bundle_product.title}}" product-price="{{ block.settings.bundle_product.selected_or_first_available_variant.price }}" product-id="{{ block.settings.bundle_product.selected_or_first_available_variant.id }}" class="add-to-bundle w-full bg-primaryRed border border-transparent rounded-md py-1 px-4 flex items-center justify-center text-sm tracking-tighter font-medium text-white">Add - {{ block.settings.bundle_product.selected_or_first_available_variant.price | money }}</button>
                     {% endif %}  
                   </div>
                 {% endif %}
