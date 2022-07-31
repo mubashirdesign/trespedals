@@ -1,5 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-white">
+<div class="bg-gray-900">
     <!-- Header -->
     <div class="relative pb-32 bg-gradient-to-r from-primaryRed via-primaryRed to-gray-900">
       <!-- <div class="absolute inset-0">
@@ -37,7 +37,7 @@
       <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-2">
         {% for block in section.blocks %}
 
-        <a href="{{block.settings.url}}" class="flex flex-col bg-gray-900 shadow-xl rounded-md hover:shadow-2xl transition duration-500">
+        <a href="{{block.settings.url}}" class="flex flex-col shadow-2xl rounded-md hover:shadow-2xl transition duration-500" style="background-color: {{block.settings.card_color}}">
           
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
             {% if block.settings.logo_image != blank %}
@@ -54,7 +54,7 @@
                 {%- if block.settings.logo_image.width >= 3840 -%}{{ block.settings.logo_image | img_url: '3840x' }} 3840w,{%- endif -%}
                 {{ block.settings.logo_image | img_url: 'master' }} {{ block.settings.logo_image.width }}w"
               sizes="100vw"
-              src="{{ block.settings.logo_image | img_url: '1500x' }}"
+              src="{{ block.settings.logo_image | img_url: '500x' }}"
               loading="lazy"
               alt="{{ block.settings.logo_image.alt | escape }}"
               width="{{ block.settings.logo_image.width }}"
@@ -63,8 +63,8 @@
 
             </div>
             {% endif %}
-            <h3 class="text-4xl text-center font-extrabold tracking-tight text-primaryRed">{{block.settings.title}}</h3>
-            <p class="mt-4 text-base text-center text-gray-100">{{block.settings.sub_title}}</p>
+            <h3 class="text-4xl text-center font-extrabold tracking-tight" style="color: {{block.settings.card_text_color}}">{{block.settings.title}}</h3>
+            <p class="mt-4 text-base text-center" style="color: {{block.settings.card_text_color}}">{{block.settings.sub_title}}</p>
           </div>
           <div class="p-6 h-[300px] bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8 relative">
             <div class="absolute inset-0">
@@ -150,6 +150,18 @@
         "type": "image_picker",
         "id": "card_image",
         "label": "Image For Card"
+      },
+      {
+        "type": "color",
+        "id": "card_color",
+        "label": "Color of Card",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "card_text_color",
+        "label": "Text Color of Card",
+        "default": "#000000"
       }
       ]  
     }
