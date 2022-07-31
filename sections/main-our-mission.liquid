@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-gray-900">
     <!-- Header -->
-    <div class="relative pb-32 bg-gradient-to-r from-primaryRed via-primaryRed to-gray-900">
+    <div class="relative pb-32 bg-gradient-to-r from-gray-900 via-primaryRed to-gray-900">
       <!-- <div class="absolute inset-0">
         <img
         srcset="{%- if section.settings.background_image.width >= 375 -%}{{ section.settings.background_image | img_url: '375x' }} 375w,{%- endif -%}
@@ -26,8 +26,8 @@
         <div class="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true"></div>
       </div> -->
       <div class="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white"  style="text-shadow: 1px 2px black;">{{section.settings.title}}</h1>
-        <p class="mt-6 max-w-3xl text-xl text-gray-300" style="text-shadow: 1px 2px black;">{{ section.settings.sub_title }}</p>
+        <h1 class="text-4xl font-extrabold tracking-tight text-white pb-2"  style="text-shadow: 1px 2px black;">{{section.settings.title}}</h1>
+        <p class="max-w-3xl text-md text-gray-100">{{ section.settings.sub_title }}</p>
       </div>
     </div>
   
@@ -63,7 +63,7 @@
 
             </div>
             {% endif %}
-            <h3 class="text-4xl text-center font-extrabold tracking-tight" style="color: {{block.settings.card_text_color}}">{{block.settings.title}}</h3>
+            <h3 class="text-4xl text-center font-extrabold tracking-tight" style="color: {{block.settings.card_text_color}}; text-shadow: 1px 2px black;">{{block.settings.title}}</h3>
             <p class="mt-4 text-base text-center" style="color: {{block.settings.card_text_color}}">{{block.settings.sub_title}}</p>
           </div>
           <div class="p-6 h-[300px] bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8 relative">
