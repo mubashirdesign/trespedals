@@ -171,17 +171,7 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Three_Pedals_CCMalibu_by_Autocentric_Media.jpg",
         "title": "See Our Builds In Action!",
-        "sub_title": ""
-      }
-    },
-    "16592247801fc5ca02": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Three_Pedals_1996_Impala_GenV_LT1_T56-159-1200x607.jpg",
-        "heading": "",
-        "subheading": "",
-        "button_label": "",
-        "button_link": ""
+        "sub_title": "Our work has grown to include custom builds, where we transform a vehicle with a new drivetrain and significant additional upgrades to make it the vehicle of its owner’s dreams.  Our work and our products have been featured in numerous publications."
       }
     }
   },
@@ -189,7 +179,6 @@
     "1658664611ad51cf02",
     "16586690029da88f5f",
     "16589683354d3169e6",
-    "16590952738dccb4da",
-    "16592247801fc5ca02"
+    "16590952738dccb4da"
   ]
 }
