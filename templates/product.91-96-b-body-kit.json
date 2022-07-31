@@ -138,6 +138,14 @@
             "bundle_product_collection": "lt1-clutch-kits",
             "column_span": 1
           }
+        },
+        "8a33bec1-c6cd-46e3-a5e7-b17cfa9ecc6d": {
+          "type": "featured_product",
+          "settings": {
+            "bundle_product": "3-od-steel-driveshaft-with-1310-yoke",
+            "bundle_product_collection": "",
+            "column_span": 1
+          }
         }
       },
       "block_order": [
@@ -158,7 +166,8 @@
         "f0eeec94-5905-4cfc-a5da-f32ba6af5cc5",
         "ff656063-d1d9-4086-8ce8-d61956b406ff",
         "fea0f9ca-ce52-49cf-9ece-f58a9a49eea7",
-        "8af8cf74-0bf0-479f-ae2e-b080b8e76dad"
+        "8af8cf74-0bf0-479f-ae2e-b080b8e76dad",
+        "8a33bec1-c6cd-46e3-a5e7-b17cfa9ecc6d"
       ],
       "settings": {
         "custom_liquid": ""
