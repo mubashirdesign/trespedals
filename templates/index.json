@@ -173,12 +173,19 @@
         "title": "See Our Builds In Action!",
         "sub_title": "Our work has grown to include custom builds, where we transform a vehicle with a new drivetrain and significant additional upgrades to make it the vehicle of its owner’s dreams.  Our work and our products have been featured in numerous publications."
       }
+    },
+    "1659228923d7a36393": {
+      "type": "video-banner",
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=snkQH9D9iiI"
+      }
     }
   },
   "order": [
     "1658664611ad51cf02",
     "16586690029da88f5f",
     "16589683354d3169e6",
-    "16590952738dccb4da"
+    "16590952738dccb4da",
+    "1659228923d7a36393"
   ]
 }
