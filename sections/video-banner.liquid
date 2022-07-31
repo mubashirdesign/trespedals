@@ -1,0 +1,55 @@
+ <!-- Hero section -->
+ <div class="relative bg-gray-900 m-auto">
+    <!-- Decorative image and overlay -->
+    
+    <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-60"></div>
+  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/snkQH9D9iiI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+    <div class="relative max-w-3xl mx-auto py-32 px-6 flex flex-col items-center text-center lg:px-0">
+      <h1 class="font-extrabold tracking-tight text-white lg:text-2xl" style="text-shadow: 1px 1px black;">{{ section.settings.heading }}</h1>
+      <p class="mt-4 text-xl font-semibold text-white">{{ section.settings.subheading }}</p>
+      {% if section.settings.button_label != blank %}
+      <a href="{{ section.settings.button_link }}" class="mt-8 inline-block bg-primaryRed border border-transparent rounded-md py-3 px-8 text-base font-medium text-white hover:bg-gray-800">{{ section.settings.button_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+  
+  
+  {% schema %}
+  {
+    "name": "t:sections.image-banner.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "The Ultimate B-Body Swap",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "default": "Trespedals",
+        "label": "Sub Heading"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Button label",
+        "label": "Button Label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video Banner"
+      }
+    ]
+  }
+  {% endschema %}
+  
