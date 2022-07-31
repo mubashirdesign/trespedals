@@ -51,14 +51,14 @@
           "type": "featured_product",
           "settings": {
             "bundle_product": "spicer-driveshaft-straps-and-grade-8-bolts",
-            "bundle_product_collection": "impala-ss-center-console-inserts",
+            "bundle_product_collection": "",
             "column_span": 1
           }
         },
         "81c17918-8ec9-4bed-9ef7-3208de7003e9": {
           "type": "featured_product",
           "settings": {
-            "bundle_product": "hurst-replacement-competition-plus-stick-7-1-2-straight",
+            "bundle_product": "eaton-truetrac-differential-for-gm-8-5-inch-10-bolt-rear-axle",
             "bundle_product_collection": "",
             "column_span": 1
           }
