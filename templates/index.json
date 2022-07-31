@@ -116,9 +116,8 @@
     },
     "16589683354d3169e6": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
+        "image": "shopify:\/\/shop_images\/PXL_20220513_1316426361.jpg",
         "image_2": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-13.jpg",
         "heading": "“The pedals and shifter feel and look as though they could have been a factory installation: That crisp, six-speed stick really wakes up the car.”",
         "subheading": "– “Stick it To ‘Em”, AutoWeek Magazine, May 15, 2017",
@@ -128,6 +127,7 @@
     },
     "1659228923d7a36393": {
       "type": "video-banner",
+      "disabled": true,
       "settings": {
         "video_url": "https:\/\/www.youtube.com\/watch?v=snkQH9D9iiI"
       }
