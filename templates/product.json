@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "6f226fb2-0477-40bb-b1ef-d54415bf0b79": {
+          "type": "title",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -32,6 +37,7 @@
         }
       },
       "block_order": [
+        "6f226fb2-0477-40bb-b1ef-d54415bf0b79",
         "price",
         "quantity_selector",
         "variant_picker",
