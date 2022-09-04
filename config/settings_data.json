@@ -106,6 +106,12 @@
         "settings": {
           "custom_liquid": ""
         }
+      },
+      "section-login": {
+        "type": "section-login",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hNUNQAOg.jpg"
+        }
       }
     },
     "content_for_index": [
