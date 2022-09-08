@@ -24,7 +24,7 @@
             "bundle_product": "b-body-clutch-hydraulics-package-7-8-mc-excl-hrb",
             "bundle_product_collection": "b-body-clutch-hydraulics-package-3-4-mc-excl-hrb",
             "column_span": 1,
-            "enable_checkbox": false
+            "enable_checkbox": true
           }
         },
         "3a6bff40-eabc-4bb8-a85b-dc4f919f725a": {
