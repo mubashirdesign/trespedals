@@ -35,8 +35,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-
-            {% if block.settings.enable_checkbox != false %}
+            {% if enable_checkbox == false %}
             <div class="w-full grid gap-y-8 gap-x-6 grid-cols-12 items-center lg:gap-x-8">
               <div class="aspect-w-3 aspect-h-2 sm:aspect-w-2 sm:aspect-h-3 rounded-lg bg-gray-100 overflow-hidden col-span-12 lg:col-span-5">
                 <image srcset="{{ collection.products[0].featured_image.src | img_url: '450x' }} 450w, {{ collection.products[0].featured_image.src | img_url: '630x' }} 630w" src="{{ collection.products[0].featured_image.src | img_url: '630x' }}" src-placeholder="{{ collection.products[0].featured_image.src | img_url: '50x' }}" alt="{{ block.settings.feature_collection.products[0].featured_image.alt | escape }}" class="option-image object-center object-cover">
@@ -82,23 +81,24 @@
             </div>
             {% else %}
             <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-white">
-                  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                    <h2 class="text-xl font-bold text-gray-900">Customers also bought</h2>
+                  <div class="mx-auto max-w-2xl py-4 px-4 sm:py-2 sm:px-6 lg:max-w-7xl lg:px-8">
+                    <!-- <h2 class="text-xl font-bold text-gray-900">Customers also bought</h2> -->
 
                     <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+                      {% for product in collection.products %}
+
                       <div>
-                        <div class="relative">
+                        <div class="relative mb-auto">
                           <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+                            <image srcset="{{ product.featured_image.src | img_url: '450x' }} 450w, {{ product.featured_image.src | img_url: '630x' }} 630w" src="{{ product.featured_image.src | img_url: '630x' }}" src-placeholder="{{ product.featured_image.src | img_url: '50x' }}" alt="{{ product.featured_image.alt | escape }}" class="h-full w-full object-cover object-center">
+
                           </div>
                           <div class="relative mt-4">
-                            <h3 class="text-sm font-medium text-gray-900">Zip Tote Basket</h3>
-                            <p class="mt-1 text-sm text-gray-500">White and black</p>
+                            <h3 class="text-sm font-medium text-white">{{product.title}}</h3>
                           </div>
                           <div class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                             <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
-                            <p class="relative text-lg font-semibold text-white">$140</p>
+                            <p class="relative text-lg font-semibold text-white">{{ product.price | money }}</p>
                           </div>
                         </div>
                         <div class="mt-6">
@@ -106,10 +106,10 @@
                         </div>
                       </div>
 
+                      {% endfor %}
                       <!-- More products... -->
                     </div>
                   </div>
-                </div>
 
             {% endif %}
           </div>

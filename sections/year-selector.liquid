@@ -1,0 +1,51 @@
+<year-selector>
+    <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <div>
+            <label for="year" class="block text-sm font-medium text-gray-700">Year</label>
+            <select id="year" name="year" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+              <option>1994</option>
+              <option selected>1995</option>
+              <option>1996</option>
+            </select>
+          </div>
+
+      </div>
+  
+      <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <div>
+            <label for="make" class="block text-sm font-medium text-gray-700">Make</label>
+            <select id="make" name="make" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+            <option>United States</option>
+            <option selected>Canada</option>
+            <option>Mexico</option>
+            </select>
+        </div>
+      </div>
+  
+      <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <div>
+            <label for="model" class="block text-sm font-medium text-gray-700">Model</label>
+            <select id="model" name="model" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+              <option>United States</option>
+              <option selected>Canada</option>
+              <option>Mexico</option>
+            </select>
+          </div>
+      </div>
+    </dl>
+  </year-selector>
+
+{% schema %}
+{
+  "name": "Year Selector",
+  "tag": "section",
+  "settings": [
+  ],
+  "presets": [
+    {
+      "name": "Year Selector"
+    }
+  ]
+}
+{% endschema %}

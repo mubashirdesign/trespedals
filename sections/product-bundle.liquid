@@ -149,7 +149,7 @@
                     {% if block.settings.bundle_product_collection != blank %}
                     <button index="{{forloop.index0}}" class="product-bundle-options text-xs text-right my-1 font-medium text-indigo-600 hover:text-indigo-500">Change Selection</button>
                   
-                  {% render 'product-bundle-options', forloop: forloop.index0, collection: block.settings.bundle_product_collection %}
+                  {% render 'product-bundle-options', forloop: forloop.index0, collection: block.settings.bundle_product_collection, enable_checkbox: block.settings.enable_checkbox %}
 
                   {% endif %}
                     

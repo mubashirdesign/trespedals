@@ -22,6 +22,12 @@
                productBundle.querySelector('.product-bundle-title').innerHTML = this.querySelector('.option-title').innerHTML;
                this.classList.add('hidden');
             }
+
+            if (e.target.classList.contains('checkbox-update')) {
+              //left off
+            }
+          
+
           });
 
           this.querySelector('select').addEventListener('change', (e) => {

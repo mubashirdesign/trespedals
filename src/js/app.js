@@ -10,3 +10,4 @@ import '../../scripts/sections/product-bundle.js';
 import '../../scripts/sections/product-bundle-options';
 import '../../scripts/sections/mobile-filters.js';
 import '../../scripts/sections/mobile-menu.js';
+import '../../scripts/sections/year-selector.js';
