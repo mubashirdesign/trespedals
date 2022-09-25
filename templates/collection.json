@@ -7,6 +7,11 @@
         "show_collection_image": false
       }
     },
+    "16641194871ea310ba": {
+      "type": "year-selector",
+      "settings": {
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -25,6 +30,7 @@
   },
   "order": [
     "banner",
+    "16641194871ea310ba",
     "product-grid"
-    ]
+  ]
 }
