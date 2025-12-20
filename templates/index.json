@@ -21,27 +21,28 @@
             "url": "shopify://products/1991-1996-gm-b-body-conversion-kit"
           }
         },
-        "2c5a6ab9-fdfa-420f-8061-f07ef9521872": {
-          "type": "featured-item",
-          "settings": {
-            "title": "Conversion Kit",
-            "sub_title": "1977 – 1990 GM B-Body",
-            "url": ""
-          }
-        },
         "70d36072-e34c-4cb0-8263-29887333ac06": {
           "type": "featured-item",
           "settings": {
-            "title": "Conversion Kit",
-            "sub_title": "1978 – 1988 GM A/G-Body",
+            "title": "MOPAR ENGINES",
+            "sub_title": "",
+            "url": ""
+          }
+        },
+        "2c5a6ab9-fdfa-420f-8061-f07ef9521872": {
+          "type": "featured-item",
+          "settings": {
+            "title": "FORD ENGINES",
+            "sub_title": "CUSTOM BUILT",
+            "image": "shopify://shop_images/Ford-Stage-1-Engine.jpg",
             "url": ""
           }
         }
       },
       "block_order": [
         "d382b8b3-336e-4b70-9abd-f75ba53ac49b",
-        "2c5a6ab9-fdfa-420f-8061-f07ef9521872",
-        "70d36072-e34c-4cb0-8263-29887333ac06"
+        "70d36072-e34c-4cb0-8263-29887333ac06",
+        "2c5a6ab9-fdfa-420f-8061-f07ef9521872"
       ],
       "settings": {
         "title": "Welcome to Three Pedals",
