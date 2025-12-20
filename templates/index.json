@@ -57,15 +57,16 @@
         "d444e40e-8be1-46bc-8994-27786fea36a0": {
           "type": "featured-item",
           "settings": {
-            "title": "Bellhousings",
+            "title": "Cylinder Heads",
             "sub_title": "& More",
+            "image": "shopify://shop_images/cylinder_head_600.png",
             "url": "shopify://collections/lt1-clutch-kits"
           }
         },
         "3f9aad42-0421-4463-9698-c6db4a687408": {
           "type": "featured-item",
           "settings": {
-            "title": "Transmissions",
+            "title": "Camshafts",
             "sub_title": "& Accessories",
             "url": "shopify://products/tremec-magnum-f-6-speed-transmission-2-66-first-gear"
           }
@@ -112,8 +113,8 @@
         "3b13001a-aa97-4ac7-9871-b1eb681772ab"
       ],
       "settings": {
-        "title": "Shop By Category",
-        "sub_title": "Our mission at Three Pedals is to help driving enthusiasts get more enjoyment out of their vehicles.  Since cars with a manual transmission are more fun, we make parts to convert cars from automatic to manual.  We also swap engines, always for more power and usually for more modern technology.",
+        "title": "WELCOME TO ROLLINGTHUNDERZ SPEED SHOP",
+        "sub_title": "Rolling Thunderz track record for winning races and setting performance records with great high performance engines is a direct result of the custom modified cylinder heads, ported intake manifolds and custom camshaft profiles developed by Ned Erkman to work as superior engine systems for each unique engine application.",
         "style": "grid"
       }
     },
