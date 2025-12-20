@@ -25,7 +25,8 @@
           "type": "featured-item",
           "settings": {
             "title": "MOPAR ENGINES",
-            "sub_title": "",
+            "sub_title": "CUSTOM BUILT",
+            "image": "shopify://shop_images/MM252-TECH-Mopar_00.webp",
             "url": ""
           }
         },
