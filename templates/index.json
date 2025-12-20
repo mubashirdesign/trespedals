@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1658664611ad51cf02": {
@@ -6,10 +15,10 @@
         "d382b8b3-336e-4b70-9abd-f75ba53ac49b": {
           "type": "featured-item",
           "settings": {
-            "title": "Conversion Kit",
-            "sub_title": "1991 – 1996 GM B-Body",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_1996_Impala_GenV_LT1_T56-158.jpg",
-            "url": "shopify:\/\/products\/1991-1996-gm-b-body-conversion-kit"
+            "title": "CHEVY ENGINES",
+            "sub_title": "Custom Built",
+            "image": "shopify://shop_images/Chevy-ZZ6-Turn-Key-Small-Block-Engine.avif",
+            "url": "shopify://products/1991-1996-gm-b-body-conversion-kit"
           }
         },
         "2c5a6ab9-fdfa-420f-8061-f07ef9521872": {
@@ -17,7 +26,6 @@
           "settings": {
             "title": "Conversion Kit",
             "sub_title": "1977 – 1990 GM B-Body",
-            "image": "shopify:\/\/shop_images\/Safari-Hoonigan-by-on.the_.grid-v3-1200x630.jpg",
             "url": ""
           }
         },
@@ -25,8 +33,7 @@
           "type": "featured-item",
           "settings": {
             "title": "Conversion Kit",
-            "sub_title": "1978 – 1988 GM A\/G-Body",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_CCMalibu_by_Autocentric_Media.jpg",
+            "sub_title": "1978 – 1988 GM A/G-Body",
             "url": ""
           }
         }
@@ -50,8 +57,7 @@
           "settings": {
             "title": "Bellhousings",
             "sub_title": "& More",
-            "image": "shopify:\/\/shop_images\/rm-9023.png",
-            "url": "shopify:\/\/collections\/lt1-clutch-kits"
+            "url": "shopify://collections/lt1-clutch-kits"
           }
         },
         "3f9aad42-0421-4463-9698-c6db4a687408": {
@@ -59,8 +65,7 @@
           "settings": {
             "title": "Transmissions",
             "sub_title": "& Accessories",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_Tremec_Magnum-F-8.png",
-            "url": "shopify:\/\/products\/tremec-magnum-f-6-speed-transmission-2-66-first-gear"
+            "url": "shopify://products/tremec-magnum-f-6-speed-transmission-2-66-first-gear"
           }
         },
         "5b4c43bb-c1a8-436d-aa90-02d106299a0c": {
@@ -68,8 +73,7 @@
           "settings": {
             "title": "Pedals",
             "sub_title": "& More",
-            "image": "shopify:\/\/shop_images\/Three_Pedals_G-Body_pedals-14.jpg",
-            "url": "shopify:\/\/products\/91-96-gm-b-body-integrated-clutch-and-brake-pedal-assembly"
+            "url": "shopify://products/91-96-gm-b-body-integrated-clutch-and-brake-pedal-assembly"
           }
         },
         "4a6f383a-8443-42e0-aa27-768b109d3548": {
@@ -77,7 +81,6 @@
           "settings": {
             "title": "Clutch Kits",
             "sub_title": "& Hydraulics",
-            "image": "shopify:\/\/shop_images\/6912-07_McLeod_RST_Street_Twin_Clutch.jpg",
             "url": ""
           }
         },
@@ -86,8 +89,7 @@
           "settings": {
             "title": "Shifters",
             "sub_title": "& Accessories",
-            "image": "shopify:\/\/shop_images\/5380036.png",
-            "url": "shopify:\/\/products\/hurst-replacement-competition-plus-stick-7-1-2-straight"
+            "url": "shopify://products/hurst-replacement-competition-plus-stick-7-1-2-straight"
           }
         },
         "3b13001a-aa97-4ac7-9871-b1eb681772ab": {
@@ -95,8 +97,7 @@
           "settings": {
             "title": "Driveshafts",
             "sub_title": "& More",
-            "image": "shopify:\/\/shop_images\/537-cf6769-400.jpg",
-            "url": "shopify:\/\/products\/3-od-steel-driveshaft-with-1310-yoke"
+            "url": "shopify://products/3-od-steel-driveshaft-with-1310-yoke"
           }
         }
       },
@@ -117,19 +118,17 @@
     "16589683354d3169e6": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/PXL_20220513_1316426361.jpg",
-        "image_2": "shopify:\/\/shop_images\/Three_Pedals_T56_billet_shift_knob-13.jpg",
         "heading": "“The pedals and shifter feel and look as though they could have been a factory installation: That crisp, six-speed stick really wakes up the car.”",
         "subheading": "– “Stick it To ‘Em”, AutoWeek Magazine, May 15, 2017",
         "button_label": "Read Here",
-        "button_link": "shopify:\/\/pages\/contact"
+        "button_link": "shopify://pages/contact"
       }
     },
     "1659228923d7a36393": {
       "type": "video-banner",
       "disabled": true,
       "settings": {
-        "video_url": "https:\/\/www.youtube.com\/watch?v=snkQH9D9iiI"
+        "video_url": "https://www.youtube.com/watch?v=snkQH9D9iiI"
       }
     },
     "16590952738dccb4da": {
@@ -140,9 +139,7 @@
           "settings": {
             "title": "Shaken & Stirred",
             "sub_title": "Our 1989 Pontiac Safari station wagon will make you look twice.  If it isn’t obvious by now, we love sleepers – the cars that look sedate but pack some serious punch.",
-            "url": "shopify:\/\/products\/build-it-like-shaken",
-            "logo_image": "shopify:\/\/shop_images\/shaken-and-stirred-logo-v2.png",
-            "card_image": "shopify:\/\/shop_images\/Three_Pedals_Shaken_and_Stirred_ISSCA_2017-2-1200x1184.jpg",
+            "url": "shopify://products/build-it-like-shaken",
             "card_color": "#795548",
             "card_text_color": "#ffffff"
           }
@@ -152,8 +149,7 @@
           "settings": {
             "title": "SSubtle Take",
             "sub_title": "Nope, not that LT1 – a 2016 Camaro 6.2L LT1.  We installed the engine along with a Tremec T56 Magnum 6 speed manual transmission and a whole bunch of other awesome parts to help this Impala haul.",
-            "url": "shopify:\/\/products\/build-it-like-ssubtle",
-            "card_image": "shopify:\/\/shop_images\/LT1IMPALASS-3.jpg",
+            "url": "shopify://products/build-it-like-ssubtle",
             "card_color": "#e91e63",
             "card_text_color": "#ffffff"
           }
@@ -162,9 +158,8 @@
           "type": "featured-item",
           "settings": {
             "title": "Car Craft Malibu",
-            "sub_title": "We’ve kicked things up a notch in the Car Craft Malibu, installing an LS3, a turbo, a Tremec T56 Magnum, and of course our new G-Body pedals.  Let us help you upgrade your ’78 – ’88 A\/G-Body.",
+            "sub_title": "We’ve kicked things up a notch in the Car Craft Malibu, installing an LS3, a turbo, a Tremec T56 Magnum, and of course our new G-Body pedals.  Let us help you upgrade your ’78 – ’88 A/G-Body.",
             "url": "",
-            "card_image": "shopify:\/\/shop_images\/020-1978-malibu-gold-burnout.png",
             "card_color": "#ff9800",
             "card_text_color": "#ffffff"
           }
@@ -176,7 +171,6 @@
         "6dd32d66-31b3-4c81-9730-a1f0157b6ed9"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/Three_Pedals_CCMalibu_by_Autocentric_Media.jpg",
         "title": "See Our Builds In Action!",
         "sub_title": "Our work has grown to include custom builds, where we transform a vehicle with a new drivetrain and significant additional upgrades to make it the vehicle of its owner’s dreams.  Our work and our products have been featured in numerous publications."
       }
